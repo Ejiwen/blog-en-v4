@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  // padding: 1.6rem;
+  // box-sizing: border-box;
+  color: $color-text-main;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+.svg8 {
+  border: 10px solid green;
+}
+
+a {
+  background-image: none !important;
+}
+
+.comingsoon {
+  text-align: center;
+}
+
+.top-bg-writing {
+  background: url("../../static/images/top-post-header.svg") top center
+    no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  max-height: 200px;
+}

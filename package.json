@@ -9,12 +9,19 @@
   ],
   "scripts": {
     "develop": "gatsby develop",
+    "compile": "sass src/style/sass/main.scss src/style/style.css -w",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "gatsby": "^4.4.0",
@@ -26,16 +33,18 @@
     "gatsby-plugin-sass": "^5.4.0",
     "gatsby-plugin-sharp": "^4.4.0",
     "gatsby-plugin-sitemap": "^5.4.0",
+    "gatsby-plugin-typography": "^4.4.0",
     "gatsby-source-filesystem": "^4.4.0",
     "gatsby-source-wordpress": "^6.4.0",
     "gatsby-transformer-remark": "^5.4.0",
     "gatsby-transformer-sharp": "^4.4.0",
+    "highlight.js": "^11.4.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0",
-    "sass": "^1.47.0"
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "netlify-cli": "^8.6.15"
+    "netlify-cli": "^8.6.15",
+    "sass": "^1.47.0"
   }
 }

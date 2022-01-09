@@ -1,0 +1,105 @@
+// the header Style
+header {
+  background: url("../../static/images/header-mr-sf.svg") top center no-repeat; //coverbase5 cheese #BD5B1A
+  background-size: cover;
+  position: relative;
+
+  .my-bio-container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: fit-content;
+    .my-bio {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #1b3803;
+      h3 {
+        margin: 0;
+        font-size: 50px;
+        word-spacing: 0.5rem;
+        letter-spacing: 0.2rem;
+        -webkit-text-fill-color: #1b3803;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #ffffff;
+        text-shadow: 2px 4px #1b3803, -2px 6px #b7463e;
+      }
+
+      .ml2 {
+        font-weight: 900;
+        font-size: 2.5em;
+        .letter {
+          display: inline-block;
+          line-height: 1em;
+        }
+      }
+
+      p {
+        margin: 0;
+        font-weight: 700;
+      }
+
+      &--begin {
+        border-bottom: 2px solid black;
+      }
+      &--fin {
+        border-top: 2px solid black;
+      }
+
+      &--role {
+        font-weight: 700;
+        letter-spacing: 0.3rem;
+        background-color: #fef06973;
+        border-left: 2px solid #fef06973;
+        box-sizing: content-box;
+      }
+
+      @media (max-width: 1000px) {
+        h3 {
+          font-size: 45px;
+        }
+        &--role {
+          letter-spacing: 0.2rem;
+        }
+      }
+
+      @media (max-width: 700px) {
+        h3 {
+          font-size: 35px;
+        }
+        p {
+          font-size: 0.8rem;
+        }
+      }
+
+      @media (max-width: 420px) {
+        h3 {
+          font-size: 30px;
+          letter-spacing: 0.1rem;
+          word-spacing: 0.2rem;
+        }
+        p {
+          font-size: 0.6rem;
+        }
+      }
+
+      @media (max-width: 550px) {
+        h3 {
+          font-size: 16px;
+          letter-spacing: 0.1rem;
+          word-spacing: 0.2rem;
+        }
+        p {
+          font-size: 0.6rem;
+          letter-spacing: 0.1rem;
+          word-spacing: 0.2rem;
+        }
+      }
+    }
+  }
+}

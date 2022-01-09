@@ -1,0 +1,89 @@
+// the Footer Style
+footer {
+  background-image: url("../../static/images/footerBg.svg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-top: 50px;
+
+  .footer-right-div {
+    display: flex;
+    align-items: center;
+    .follow-me {
+      svg {
+        padding: 3px;
+        color: antiquewhite;
+      }
+    }
+  }
+
+  @media (max-width: 831px) {
+    .footer-right-div {
+      order: 2;
+    }
+  }
+
+  .contact-me {
+    flex-basis: 500px;
+    &__form {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+
+    .contact-form {
+      background: #ffbe51a8;
+      padding: 25px;
+      margin: 50px 0;
+      border-radius: 30px;
+
+      h3 {
+        color: #bd5b1a;
+        display: block;
+        font-size: 30px;
+        font-weight: 400;
+        margin-top: 0px;
+      }
+
+      h4 {
+        // margin:5px 0 15px;
+        display: block;
+        font-size: 13px;
+      }
+
+      fieldset {
+        border: medium none !important;
+        margin: 0 0 10px;
+        min-width: 100%;
+        padding: 0;
+        width: 100%;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        border: 1px solid #ccc;
+        background: #fff;
+        margin: 0 0 5px;
+        padding: 10px;
+      }
+
+      button[type="submit"] {
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        background: #bd5b1a;
+        color: #fff;
+        margin: 0 0 5px;
+        padding: 10px;
+        font-size: 15px;
+      }
+    }
+  }
+}
