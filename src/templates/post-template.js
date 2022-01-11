@@ -6,6 +6,7 @@ import parse from "html-react-parser"
 import styled from "@emotion/styled"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import { Disqus } from 'gatsby-plugin-disqus';
 
 import highlightCode from '../utils/highlightCode'
 
@@ -29,6 +30,13 @@ const PostTemplate = ({ data: { previous, next, post } }) => {
   useEffect(() => {
     highlightCode()
   })
+
+  let disqusConfig = {
+    url: post.uri,
+    identifier: post.id,
+    title: post.title,
+  }
+
   return (
     <Wrapper>
       <Navbar />
@@ -38,7 +46,13 @@ const PostTemplate = ({ data: { previous, next, post } }) => {
         <Title> {parse(post.title)} </Title>
         <div> </div>
         {!!post.content && <div>{parse(post.content)}</div>}
+        
+        <div>
+        <Disqus config={disqusConfig} />
+        </div>
       </ArticleWrapper>
+
+      
 
       <nav className="blog-post-nav">
         <ul
