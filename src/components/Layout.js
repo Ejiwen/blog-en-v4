@@ -3,6 +3,7 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import parse from "html-react-parser"
 import Header from "./Header"
 import Footer from "./Footer"
+import Projects from "./Projects"
 
 const Layout = ({ isHomePage, children }) => {
   const {
@@ -25,6 +26,8 @@ const Layout = ({ isHomePage, children }) => {
       <Header title={parse(title)} description={parse(description)} />
 
       <main>{children}</main>
+
+      <Projects />
 
       <Footer />
     </div>
