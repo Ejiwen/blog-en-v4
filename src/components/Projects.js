@@ -1,9 +1,32 @@
 import React from 'react'
+import { useStaticQuery, graphql } from "gatsby"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Projects = () => {
+
+  const data = useStaticQuery(graphql`
+    query GetProjects {
+    allWpProject {
+      edges {
+        node {
+          title
+          content
+          project_screenshot {
+            pageBannerBackgroundImage {
+              sourceUrl
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  `)
+
+  const projects = data?.allWpProject ?.edges ?? {}
+
     var settings = {
         dots: true,
         infinite: true,
@@ -13,26 +36,20 @@ const Projects = () => {
       };
       return (
           <div style={{width:"600px", margin: "0 auto", border: "2px solid green"}}>
-        <Slider {...settings}>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-        </Slider>
+            <Slider {...settings}>
+             
+              {
+                projects.map((project) => (
+                <div> 
+                  <div> {project.node.title} </div>
+                  <div> <img src={project.node.project_screenshot.pageBannerBackgroundImage.sourceUrl} /></div>
+                </div>
+                )
+                  
+                )
+              }
+              
+            </Slider>
         </div>
       );
 }
