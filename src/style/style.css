@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
 *,
 *::after,
 *::before {
@@ -557,10 +558,12 @@ footer .contact-me .contact-form button[type=submit] {
   justify-content: space-between;
 }
 
+.projects-wrap {
+  background-color: #ffc665;
+}
 .projects-wrap .projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  max-width: 880px;
+  margin: auto;
 }
 .projects-wrap .projects__header {
   color: #b7463e;
@@ -583,6 +586,9 @@ footer .contact-me .contact-form button[type=submit] {
   .projects-wrap .projects__header img {
     width: 100px;
   }
+}
+.projects-wrap .topExpBg {
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=style.css.map */
