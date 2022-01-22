@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "@emotion/styled"
+import parse from "html-react-parser"
 
 const ExperienceBttomBg = styled.div`
   background: url("sectionmask3.svg") no-repeat;
@@ -74,14 +75,24 @@ const Projects = () => {
           {
             projects.map((project) => (
 
-              <div className="project__slider">
-                <div>
-                  <img src={project.node.project_screenshot.pageBannerBackgroundImage.sourceUrl} alt="" />
+              <div className="projects__slider">
+
+                <div className='slider-items'>
+                  <div className='slider-images'>
+                    <div>
+                      <img src={project.node.project_screenshot.pageBannerBackgroundImage.sourceUrl} alt="" />
+                    </div>
+                    <div>
+                      <img src={project.node.featuredImage.node.sourceUrl} alt="" />
+                    </div>
+                  </div>
+
+                  <div className='slider-details'>
+                    <div>{project.node.title}</div>
+                    <div>{parse(project.node.content)}</div>
+                  </div>
                 </div>
-                <div>
-                  <img src={project.node.featuredImage.node.sourceUrl} alt="" />
-                </div>
-                <div>{project.node.title}</div>
+
               </div>
 
             )
