@@ -566,8 +566,64 @@ footer .contact-me .contact-form button[type=submit] {
   background-color: #ffc665;
 }
 .projects-wrap .projects {
-  max-width: 880px;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+.projects-wrap .projects__slider .slider-items {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.projects-wrap .projects__slider .slider-items .slider-images {
+  margin-right: -100px;
+  z-index: 1;
+  align-self: center;
+}
+.projects-wrap .projects__slider .slider-items .slider-images .links {
+  display: flex;
+  column-gap: 6px;
+  align-content: center;
+  justify-content: center;
+}
+.projects-wrap .projects__slider .slider-items .slider-images .links a {
+  color: black;
+  border: 1px solid grey;
+  padding: 6px;
+  background-color: #ffffffcc;
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
+.projects-wrap .projects__slider .slider-items .slider-images .links a:hover {
+  background-color: white;
+  color: #b7453e;
+}
+.projects-wrap .projects__slider .slider-items .slider-images .links .notExist {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+.projects-wrap .projects__slider .slider-items .slider-details {
+  background-color: rgba(220, 223, 17, 0.37);
+  padding: 10px 100px;
+}
+.projects-wrap .projects__slider .slider-items .slider-details ul {
+  list-style: none;
+  color: #191818;
+  margin: 0;
+}
+.projects-wrap .projects__slider .slider-items .slider-details ul::before {
+  content: "DEVELOPMENT TOOLS: ";
+}
+.projects-wrap .projects__slider .slider-items .slider-details ul li {
+  padding: 0;
+  margin: 0;
+}
+.projects-wrap .projects__slider .slider-items .slider-details ul li::before {
+  font-family: "FontAwesome";
+  color: #318ca0;
+  font-size: 32px;
+  content: "\f005";
 }
 .projects-wrap .projects__header {
   color: #b7463e;
@@ -590,12 +646,6 @@ footer .contact-me .contact-form button[type=submit] {
   .projects-wrap .projects__header img {
     width: 100px;
   }
-}
-.projects-wrap .projects__slider {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .projects-wrap .topExpBg {
   transform: rotate(180deg);

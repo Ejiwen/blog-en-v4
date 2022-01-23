@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -16,26 +16,30 @@ const ExperienceBttomBg = styled.div`
 const Projects = () => {
 
   const data = useStaticQuery(graphql`
-  query GetProjects {
-    allWpProject {
-      edges {
-        node {
-          title
-          content
-          project_screenshot {
-            pageBannerBackgroundImage {
-              sourceUrl
+    query GetProjects {
+      allWpProject {
+        edges {
+          node {
+            title
+            content
+            project_screenshot {
+              pageBannerBackgroundImage {
+                sourceUrl
+              }
             }
-          }
-          featuredImage {
-            node {
-              sourceUrl
+            featuredImage {
+              node {
+                sourceUrl
+              }
+            }
+            projectInfo {
+              githubLink
+              projectLink
             }
           }
         }
       }
     }
-  }
   `)
 
   const projects = data?.allWpProject?.edges ?? {}
@@ -74,22 +78,26 @@ const Projects = () => {
 
           {
             projects.map((project) => (
-
               <div className="projects__slider">
 
                 <div className='slider-items'>
                   <div className='slider-images'>
                     <div>
-                      <img src={project.node.project_screenshot.pageBannerBackgroundImage.sourceUrl} alt="" />
+                      <img src={project.node.project_screenshot.pageBannerBackgroundImage.sourceUrl} width="300px" alt="" />
                     </div>
-                    <div>
-                      <img src={project.node.featuredImage.node.sourceUrl} alt="" />
+                    <div className='links'>
+                      {/* <img src={project.node.featuredImage.node.sourceUrl} width="300px" alt="" /> */}
+                      <Link to={project.node.projectInfo.projectLink} >Demo</Link>
+
+                      <Link
+                        to={project.node.projectInfo.githubLink}
+                        className={project.node.projectInfo.githubLink ? 'exist' : 'notExist'} > <span>Code</span> </Link>
                     </div>
                   </div>
 
                   <div className='slider-details'>
-                    <div>{project.node.title}</div>
-                    <div>{parse(project.node.content)}</div>
+                    <h3>{project.node.title}</h3>
+                    <p>{parse(project.node.content)}</p>
                   </div>
                 </div>
 
