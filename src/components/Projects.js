@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import styled from "@emotion/styled"
 import parse from "html-react-parser"
 
+
 const ExperienceBttomBg = styled.div`
   background: url("sectionmask3.svg") no-repeat;
   background-size: cover;

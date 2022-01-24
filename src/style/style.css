@@ -1,5 +1,18 @@
 @charset "UTF-8";
 @import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+.colorTheme {
+  height: 100vh;
+  transition: 0.3s ease-in-out;
+}
+
+.darkTheme {
+  background-color: #05112a !important;
+  color: #fff;
+}
+.darkTheme a {
+  color: yellow;
+}
+
 *,
 *::after,
 *::before {

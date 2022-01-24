@@ -1,9 +1,11 @@
-import React from "react"
+import React from 'react'
 import { Link, useStaticQuery, graphql } from "gatsby"
 import parse from "html-react-parser"
 import Header from "./Header"
 import Footer from "./Footer"
 import Projects from "./Projects"
+
+
 
 const Layout = ({ isBlogPage, children }) => {
   const {

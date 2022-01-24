@@ -1,11 +1,11 @@
-import React, { useEffect } from "react"
+import React, { useContext } from "react"
 import Post from "./Post"
 import headerWriting from "../../static/images/writingBg.svg"
 
 const Writing = ({ allWpPost: { nodes } }) => {
 
   return (
-    <div className="wrap-writing">
+    <div>
       <div className="writing">
         <div className="writing__header">
           <img src={headerWriting} />
@@ -19,6 +19,7 @@ const Writing = ({ allWpPost: { nodes } }) => {
         </div>
       </div>
     </div>
+
   )
 }
 

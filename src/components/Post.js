@@ -33,6 +33,7 @@ const Post = ({
   blogPostReadTime,
 }) => {
   return (
+
     <div className="post-content">
       <div className="post-pic">
         {featuredImage && (

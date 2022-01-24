@@ -1,0 +1,12 @@
+.colorTheme {
+    height: 100vh;
+    transition: .3s ease-in-out;
+}
+
+.darkTheme {
+    background-color: #05112a !important;
+    color: #fff;
+    a {
+        color: yellow;
+    }
+}
