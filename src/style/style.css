@@ -660,4 +660,12 @@ footer .contact-me .contact-form button[type=submit] {
   transform: rotate(180deg);
 }
 
+.slick-prev:before {
+  color: #b6443d !important;
+}
+
+.slick-next:before {
+  color: #b6443d !important;
+}
+
 /*# sourceMappingURL=style.css.map */

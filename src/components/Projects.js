@@ -46,10 +46,10 @@ const Projects = () => {
 
   var settings = {
     dots: true,
-    infinite: true,
-    speed: 500,
-    autoplay: true,
-    autoplaySpeed: 1500,
+    // infinite: true,
+    // speed: 500,
+    // autoplay: true,
+    // autoplaySpeed: 1500,
 
   };
   return (
@@ -75,9 +75,7 @@ const Projects = () => {
                       <img src={project.node.project_screenshot.pageBannerBackgroundImage.sourceUrl} height="300" alt="" />
                     </div>
                     <div className='links'>
-                      {/* <img src={project.node.featuredImage.node.sourceUrl} width="300px" alt="" /> */}
                       <Link to={project.node.projectInfo.projectLink} >Demo</Link>
-
                       <Link
                         to={project.node.projectInfo.githubLink}
                         className={project.node.projectInfo.githubLink ? 'exist' : 'notExist'} > <span>Code</span> </Link>

@@ -14,6 +14,7 @@
         margin: 2rem;
 
     &__slider {
+
       .slider-items {
         display: flex;
         align-content: center;
@@ -124,4 +125,12 @@
     transform: rotate(180deg);
   }
 
+}
+
+// Slider button navigation
+.slick-prev:before {
+  color: #b6443d !important;
+}
+.slick-next:before {
+  color: #b6443d !important;
 }

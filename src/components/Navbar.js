@@ -30,7 +30,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="navigation__item">
-            <Link className="navigation__link" to="/PostPage">
+            <Link className="navigation__link" to="/blog">
               Blog
             </Link>
           </li>
