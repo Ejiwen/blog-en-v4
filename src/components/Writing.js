@@ -3,9 +3,6 @@ import Post from "./Post"
 import headerWriting from "../../static/images/writingBg.svg"
 
 const Writing = ({ allWpPost: { nodes } }) => {
-  console.log("-----------")
-  console.log(nodes)
-  console.log("-----------")
 
   return (
     <div className="wrap-writing">
@@ -14,6 +11,7 @@ const Writing = ({ allWpPost: { nodes } }) => {
           <img src={headerWriting} />
           <h3> Recent Posts </h3>
         </div>
+
         <div className="writing__body">
           {nodes.map(post => (
             <Post key={post.id} {...post} />

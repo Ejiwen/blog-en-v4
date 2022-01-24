@@ -46,12 +46,12 @@ const Projects = () => {
 
   var settings = {
     dots: true,
-    // infinite: true,
-    // speed: 500,
-    // autoplay: true,
-    // autoplaySpeed: 1500,
-
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 1500,
   };
+
   return (
     <div className="projects-wrap">
       <ExperienceBttomBg className="topExpBg"></ExperienceBttomBg>

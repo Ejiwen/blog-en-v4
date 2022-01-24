@@ -5,7 +5,7 @@ import Header from "./Header"
 import Footer from "./Footer"
 import Projects from "./Projects"
 
-const Layout = ({ isHomePage, children }) => {
+const Layout = ({ isBlogPage, children }) => {
   const {
     wp: {
       generalSettings: { title, description },
@@ -21,8 +21,9 @@ const Layout = ({ isHomePage, children }) => {
     }
   `)
 
+
   return (
-    <div className="global-wrapper" data-is-root-path={isHomePage}>
+    <div className="global-wrapper" data-is-root-path={isBlogPage}>
       <Header title={parse(title)} description={parse(description)} />
 
       <main>{children}</main>
