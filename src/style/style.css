@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
 *,
 *::after,
 *::before {
@@ -562,9 +564,6 @@ footer .contact-me .contact-form button[type=submit] {
   min-height: 0;
 }
 
-.projects-wrap {
-  background-color: #ffc665;
-}
 .projects-wrap .projects {
   display: flex;
   justify-content: center;
@@ -604,8 +603,9 @@ footer .contact-me .contact-form button[type=submit] {
   cursor: not-allowed;
 }
 .projects-wrap .projects__slider .slider-items .slider-details {
-  background-color: rgba(220, 223, 17, 0.37);
   padding: 10px 100px;
+  background-color: #feeb60;
+  border-radius: 15px;
 }
 .projects-wrap .projects__slider .slider-items .slider-details ul {
   list-style: none;
@@ -614,16 +614,25 @@ footer .contact-me .contact-form button[type=submit] {
 }
 .projects-wrap .projects__slider .slider-items .slider-details ul::before {
   content: "DEVELOPMENT TOOLS: ";
+  font-weight: bolder;
 }
 .projects-wrap .projects__slider .slider-items .slider-details ul li {
   padding: 0;
   margin: 0;
 }
 .projects-wrap .projects__slider .slider-items .slider-details ul li::before {
-  font-family: "FontAwesome";
-  color: #318ca0;
-  font-size: 32px;
-  content: "\f005";
+  color: #b7453e;
+  content: "\f058 ";
+  /* You should use \ and not /*/
+  font-family: "Font Awesome 5 Free";
+  /* This is the correct font-family*/
+  font-style: normal;
+  font-weight: normal;
+}
+.projects-wrap .projects__slider .slider-items .slider-logo {
+  align-self: center;
+  margin-left: -100px;
+  padding: 20px;
 }
 .projects-wrap .projects__header {
   color: #b7463e;

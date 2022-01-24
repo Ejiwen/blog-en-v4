@@ -45,22 +45,11 @@ const Projects = () => {
   const projects = data?.allWpProject?.edges ?? {}
 
   var settings = {
-    // dots: true,
-    // infinite: true,
-    // speed: 500,
-    // slidesToShow: 1,
-    // slidesToScroll: 1
-
-    // dots: true,
-    // infinite: true,
-    // slidesToShow: 3,
-    // slidesToScroll: 1
-
     dots: true,
     infinite: true,
     speed: 500,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1500,
 
   };
   return (
@@ -83,7 +72,7 @@ const Projects = () => {
                 <div className='slider-items'>
                   <div className='slider-images'>
                     <div>
-                      <img src={project.node.project_screenshot.pageBannerBackgroundImage.sourceUrl} width="300px" alt="" />
+                      <img src={project.node.project_screenshot.pageBannerBackgroundImage.sourceUrl} height="300" alt="" />
                     </div>
                     <div className='links'>
                       {/* <img src={project.node.featuredImage.node.sourceUrl} width="300px" alt="" /> */}
@@ -99,6 +88,7 @@ const Projects = () => {
                     <h3>{project.node.title}</h3>
                     <p>{parse(project.node.content)}</p>
                   </div>
+                  <div className='slider-logo'><img src={project.node.featuredImage.node.sourceUrl} width="200" alt="Project Logo" /></div>
                 </div>
 
               </div>
@@ -107,9 +97,9 @@ const Projects = () => {
             )
           }
         </Slider>
-      </div>
+      </div >
       <ExperienceBttomBg ></ExperienceBttomBg>
-    </div>
+    </div >
   );
 }
 
