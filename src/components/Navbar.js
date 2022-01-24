@@ -1,8 +1,10 @@
 import { Link } from "gatsby"
-import React, { useEffect } from "react"
+import React, { useEffect, useContext } from "react"
 import logo from "../../static/images/logoV2-top.svg"
+import ThemeContext from "./ThemeContext";
 
 const Navbar = () => {
+  const [theme] = useContext(ThemeContext);
   useEffect(() => {
     const checky = document.querySelector("#checkLabel")
     checky.checked = true
@@ -51,6 +53,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+      <button style={{ backgroundColor: theme }}>Hello From Navbar</button>
     </nav>
   )
 }
