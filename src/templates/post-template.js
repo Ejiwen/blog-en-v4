@@ -9,7 +9,6 @@ import Footer from "../components/Footer"
 import { Disqus } from 'gatsby-plugin-disqus';
 
 import highlightCode from '../utils/highlightCode'
-import { myContext } from '../components/ThemeProvider'
 
 const Title = styled.h1`
   font-size: 1.5em;
@@ -39,56 +38,51 @@ const PostTemplate = ({ data: { previous, next, post } }) => {
   }
 
   return (
-    <myContext.Consumer>
-      {context => (
-        <Wrapper className="wrap-writing" className={context.isDark ? 'darkTheme' : ''}>
-          <Navbar />
-          <button onClick={() => context.changeTheme()}>{context.isDark ? "Light" : "Dark"}</button>
-          <div className="top-bg-writing"> </div>
-          <ArticleWrapper>
-            <Title> {parse(post.title)} </Title>
-            <div> </div>
-            {!!post.content && <div>{parse(post.content)}</div>}
+    <Wrapper>
+      <Navbar />
+      <div className="top-bg-writing"> </div>
+      <ArticleWrapper>
+        <Title> {parse(post.title)} </Title>
+        <div> </div>
+        {!!post.content && <div>{parse(post.content)}</div>}
 
-            <div>
-              <Disqus config={disqusConfig} />
-            </div>
-          </ArticleWrapper>
+        <div>
+          <Disqus config={disqusConfig} />
+        </div>
+      </ArticleWrapper>
 
 
 
-          <nav className="blog-post-nav">
-            <ul
-              style={{
-                display: `flex`,
-                flexWrap: `wrap`,
-                justifyContent: `space-around`,
-                listStyle: `none`,
-                padding: 0,
-                color: `#be5a19`,
-              }}
-            >
-              <li>
-                {previous && (
-                  <Link to={previous.uri} rel="prev">
-                    ← {parse(previous.title)}
-                  </Link>
-                )}
-              </li>
+      <nav className="blog-post-nav">
+        <ul
+          style={{
+            display: `flex`,
+            flexWrap: `wrap`,
+            justifyContent: `space-around`,
+            listStyle: `none`,
+            padding: 0,
+            color: `#be5a19`,
+          }}
+        >
+          <li>
+            {previous && (
+              <Link to={previous.uri} rel="prev">
+                ← {parse(previous.title)}
+              </Link>
+            )}
+          </li>
 
-              <li>
-                {next && (
-                  <Link to={next.uri} rel="next">
-                    {parse(next.title)} →
-                  </Link>
-                )}
-              </li>
-            </ul>
-          </nav>
-          <Footer />
-        </Wrapper>
-      )}
-    </myContext.Consumer>
+          <li>
+            {next && (
+              <Link to={next.uri} rel="next">
+                {parse(next.title)} →
+              </Link>
+            )}
+          </li>
+        </ul>
+      </nav>
+      <Footer />
+    </Wrapper>
   )
 }
 

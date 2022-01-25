@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Writing from "../components/Writing"
-import ThemeContext from "../components/ThemeProvider";
 
 
 export default function Home({ data }) {

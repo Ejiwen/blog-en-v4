@@ -7,13 +7,45 @@
 
 .projects-wrap {
     // background-color: #ffc665;
+
+    
     .projects {
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 2rem;
 
+
     &__slider {
+
+      @media screen and (max-width: 760px) {
+        .slider-items  {
+        flex-direction: column;
+        .slider-details {
+          padding: 20px !important;
+          order: 1;
+          h3 {
+            padding: 0;
+            margin: 0;
+          }
+          p {
+            margin-bottom: 0;
+          }
+        }
+        .slider-images {
+          flex-basis: 300px;
+          margin: 0 !important;
+          order: 3;
+          .screenshot {
+            //display: none;
+            width: 250px;
+          }
+        }
+        .slider-logo {
+          display: none;
+        }
+      }
+    }
 
       .slider-items {
         display: flex;
@@ -24,6 +56,14 @@
           margin-right: -100px;
           z-index: 1;
           align-self: center;
+          display: flex;
+          flex-direction: column;
+          flex-basis: 450px;
+
+          img {
+            padding: 0;
+            margin: 0;
+          }
 
           .links {
             display: flex;

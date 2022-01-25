@@ -47,10 +47,10 @@ const Projects = () => {
 
   var settings = {
     dots: true,
-    infinite: true,
-    speed: 500,
-    autoplay: true,
-    autoplaySpeed: 1500,
+    // infinite: true,
+    // speed: 500,
+    // autoplay: true,
+    // autoplaySpeed: 1500,
   };
 
   return (
@@ -72,8 +72,8 @@ const Projects = () => {
 
                 <div className='slider-items'>
                   <div className='slider-images'>
-                    <div>
-                      <img src={project.node.project_screenshot.pageBannerBackgroundImage.sourceUrl} height="300" alt="" />
+                    <div className='screenshot'>
+                      <img src={project.node.project_screenshot.pageBannerBackgroundImage.sourceUrl} alt="" />
                     </div>
                     <div className='links'>
                       <Link to={project.node.projectInfo.projectLink} >Demo</Link>
