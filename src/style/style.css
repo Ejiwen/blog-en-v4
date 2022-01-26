@@ -599,7 +599,7 @@ footer .contact-me .contact-form button[type=submit] {
     margin-bottom: 0;
   }
   .projects-wrap .projects__slider .slider-items .slider-images {
-    flex-basis: 300px;
+    flex-basis: 198px !important;
     margin: 0 !important;
     order: 3;
   }
