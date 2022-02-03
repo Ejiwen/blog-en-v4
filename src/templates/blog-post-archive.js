@@ -90,6 +90,7 @@ const BlogIndex = ({
 
 export default BlogIndex
 
+// Using GraphQl
 export const pageQuery = graphql`
   query WordPressPostArchive($offset: Int!, $postsPerPage: Int!) {
     allWpPost(
