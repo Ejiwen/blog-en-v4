@@ -45,7 +45,7 @@ a {
 }
 
 /* Took me sometime to fix this background issue */
-.top-bg-writing {
+.post-intro {
   background: url("../../static/images/blog-post-header.svg") top center no-repeat;
   background-size: cover;
   min-height: 200px;

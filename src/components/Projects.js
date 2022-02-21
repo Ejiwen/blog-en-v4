@@ -61,7 +61,7 @@ const Projects = () => {
           src="../../static/images/workSectionPic.svg"
           alt="Projects Intro"
         />
-        <h3> Recent Works </h3>
+        <h3> Recent Projects </h3>
       </div>
       <div className='projects'>
         <Slider {...settings}>

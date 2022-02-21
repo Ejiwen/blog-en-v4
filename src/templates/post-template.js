@@ -40,7 +40,7 @@ const PostTemplate = ({ data: { previous, next, post } }) => {
   return (
     <Wrapper>
       <Navbar />
-      <div className="top-bg-writing"> </div>
+      <div className="post-intro"> </div>
       <ArticleWrapper>
         <Title> {parse(post.title)} </Title>
         <div> </div>
