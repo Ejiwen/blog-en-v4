@@ -40,12 +40,12 @@ const Navbar = () => {
             </Link>{" "}
           </li> */}
           <li className="navigation__item">
-            <Link className="navigation__link" to="#projects">
+            <Link className="navigation__link" to="https://www.cheikhanyejiwen.com/#projects">
               Projects
             </Link>
           </li>
           <li className="navigation__item">
-            <Link className="navigation__link" to="#contacts">
+            <Link className="navigation__link" to="https://www.cheikhanyejiwen.com/#contacts">
               Contact
             </Link>
           </li>
