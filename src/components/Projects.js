@@ -73,7 +73,7 @@ const Projects = () => {
                 <div className='slider-items'>
                   <div className='slider-images'>
                     <div className='screenshot'>
-                      <img src={project.node.project_screenshot.pageBannerBackgroundImage.sourceUrl} alt="Project Miniature" />
+                      <img src={project.node.project_screenshot.pageBannerBackgroundImage.sourceUrl.replace(/^http:\/\//i, 'https://')} alt="Project Miniature" />
                     </div>
                     <div className='links'>
                       <Link to={project.node.projectInfo.projectLink} target='_blank' >Live</Link>
@@ -88,7 +88,7 @@ const Projects = () => {
                     <h3>{project.node.title}</h3>
                     <p>{parse(project.node.content)}</p>
                   </div>
-                  <div className='slider-logo'><img src={project.node.featuredImage.node.sourceUrl} width="200" alt="Project Logo" /></div>
+                  <div className='slider-logo'><img src={project.node.featuredImage.node.sourceUrl.replace(/^http:\/\//i, 'https://')} width="200" alt="Project Logo" /></div>
                 </div>
 
               </div>
