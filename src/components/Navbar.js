@@ -24,28 +24,28 @@ const Navbar = () => {
               Home
             </Link>
           </li>
-          <li className="navigation__item">
+          {/* <li className="navigation__item">
             <Link className="navigation__link" to="/">
               About
             </Link>
-          </li>
+          </li> */}
           <li className="navigation__item">
             <Link className="navigation__link" to="/blog">
               Blog
             </Link>
           </li>
-          <li className="navigation__item">
+          {/* <li className="navigation__item">
             <Link className="navigation__link" to="#Experiencesy">
               Experience
             </Link>{" "}
-          </li>
+          </li> */}
           <li className="navigation__item">
-            <Link className="navigation__link" to="#worky">
-              Work
+            <Link className="navigation__link" to="#projects">
+              Projects
             </Link>
           </li>
           <li className="navigation__item">
-            <Link className="navigation__link" to="#worky">
+            <Link className="navigation__link" to="#contacts">
               Contact
             </Link>
           </li>

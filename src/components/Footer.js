@@ -10,9 +10,9 @@ import {
 import logo from "../../static/images/logoV2-top.svg"
 
 const Footer = () => {
-  useEffect(() => {}, [])
+  useEffect(() => { }, [])
   return (
-    <footer>
+    <footer id="contacts">
       <div className="footer-right-div">
         <div className="logo-footer">
           <img src={logo} />

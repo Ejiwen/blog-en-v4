@@ -54,7 +54,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="projects-wrap">
+    <div className="projects-wrap" id="projects">
       <ExperienceBttomBg className="topExpBg"></ExperienceBttomBg>
       <div className="projects__header">
         <StaticImage
