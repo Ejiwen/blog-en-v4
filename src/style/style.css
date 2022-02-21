@@ -524,6 +524,9 @@ footer .contact-me .contact-form button[type=submit] {
   color: black;
   flex-wrap: wrap;
 }
+.writing__nav {
+  margin-top: 50px;
+}
 
 .post-content {
   display: flex;

@@ -7,6 +7,12 @@ import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import Post from "../components/Post"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faAngleDoubleRight,
+  faAngleDoubleLeft,
+} from "@fortawesome/free-solid-svg-icons"
 
 const Title = styled.h1`
   font-size: 1.5em;
@@ -16,12 +22,6 @@ const Title = styled.h1`
 
 const Wrapper = styled.div`
   background: papayawhip;
-`
-
-const ArticleWrapper = styled.div`
-  max-width: 800px;
-  padding: 20px;
-  margin: auto;
 `
 
 const BlogIndex = ({
@@ -48,41 +48,30 @@ const BlogIndex = ({
       <Seo title="All posts" />
       <Navbar />
       <div className="top-bg-writing"> </div>
-      <ArticleWrapper>
-        <ol style={{ listStyle: `none` }}>
-          {posts.map(post => {
-            const title = post.title
 
+      <div className="writing">
+        <div className="writing__header">
+          <h3> Blog Posts </h3>
+        </div>
+        <div className="writing__body">
+          {posts.map(post => {
             return (
-              <li key={post.uri}>
-                <article
-                  className="post-list-item"
-                  itemScope
-                  itemType="http://schema.org/Article"
-                >
-                  <div>
-                    <h2>
-                      <Link to={post.uri} itemProp="url">
-                        <span itemProp="headline">{parse(title)}</span>
-                      </Link>
-                    </h2>
-                    <small>{post.date}</small>
-                  </div>
-                  <section itemProp="description">{parse(post.excerpt)}</section>
-                </article>
-              </li>
+              <Post key={post.id} {...post} />
             )
           })}
-        </ol>
+        </div>
+        <div className="writing__nav">
+          {previousPagePath && (
+            <>
+              <Link to={previousPagePath}> <FontAwesomeIcon icon={faAngleDoubleLeft} size="1x" /> Previous page </Link>
+              <br />
+            </>
+          )}
+          {nextPagePath && <Link to={nextPagePath}>Next page <FontAwesomeIcon icon={faAngleDoubleRight} size="1x" /> </Link>}
+        </div>
+      </div>
 
-        {previousPagePath && (
-          <>
-            <Link to={previousPagePath}>Previous page</Link>
-            <br />
-          </>
-        )}
-        {nextPagePath && <Link to={nextPagePath}>Next page</Link>}
-      </ArticleWrapper>
+
       <Footer />
     </Wrapper>
   )
@@ -104,7 +93,48 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         excerpt
+        categories {
+          nodes {
+            name
+          }
+        }
+        featuredImage {
+          node {
+            altText
+            localFile {
+              childImageSharp {
+                gatsbyImageData(
+                  quality: 100
+                  placeholder: TRACED_SVG
+                  layout: FULL_WIDTH
+                )
+              }
+            }
+          }
+        }
       }
     }
   }
 `
+
+/*
+
+<li key={post.uri}>
+                <article
+                  className="post-list-item"
+                  itemScope
+                  itemType="http://schema.org/Article"
+                >
+                  <div>
+                    <h2>
+                      <Link to={post.uri} itemProp="url">
+                        <span itemProp="headline">{parse(title)}</span>
+                      </Link>
+                    </h2>
+                    <small>{post.date}</small>
+                  </div>
+                  <section itemProp="description">{parse(post.excerpt)}</section>
+                </article>
+              </li>
+
+*/

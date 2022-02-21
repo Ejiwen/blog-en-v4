@@ -80,7 +80,7 @@ const Post = ({
           <Spaned>
             <FontAwesomeIcon icon={faHourglassStart} size="1x" />
             &nbsp;
-            {blogPostReadTime.readingTime}
+            {blogPostReadTime && blogPostReadTime.readingTime}
           </Spaned>
         </div>
       </div>
