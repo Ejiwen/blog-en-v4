@@ -73,7 +73,7 @@ const Projects = () => {
                 <div className='slider-items'>
                   <div className='slider-images'>
                     <div className='screenshot'>
-                      <img src={project.node.project_screenshot.pageBannerBackgroundImage.sourceUrl} alt="" />
+                      <img src={project.node.project_screenshot.pageBannerBackgroundImage.sourceUrl} alt="Project Miniature" />
                     </div>
                     <div className='links'>
                       <Link to={project.node.projectInfo.projectLink} target='_blank' >Live</Link>
