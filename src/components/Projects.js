@@ -76,10 +76,11 @@ const Projects = () => {
                       <img src={project.node.project_screenshot.pageBannerBackgroundImage.sourceUrl} alt="" />
                     </div>
                     <div className='links'>
-                      <Link to={project.node.projectInfo.projectLink} >Demo</Link>
+                      <Link to={project.node.projectInfo.projectLink} target='_blank' >Live</Link>
                       <Link
                         to={project.node.projectInfo.githubLink}
-                        className={project.node.projectInfo.githubLink ? 'exist' : 'notExist'} > <span>Code</span> </Link>
+                        className={project.node.projectInfo.githubLink ? 'exist' : 'notExist'}
+                        target='_blank'> <span>Code</span> </Link>
                     </div>
                   </div>
 
