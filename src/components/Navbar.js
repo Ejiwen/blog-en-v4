@@ -37,7 +37,7 @@ const Navbar = () => {
           <li className="navigation__item">
             <Link className="navigation__link" to="#Experiencesy">
               Experience
-            </Link>{" "}
+            </Link>
           </li>
           <li className="navigation__item">
             <Link className="navigation__link" to="#worky">

@@ -1,4 +1,5 @@
-// Post's List
+// The list of blog post 
+// blog page
 import React from "react"
 import { Link, graphql } from "gatsby"
 import parse from "html-react-parser"
