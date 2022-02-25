@@ -48,7 +48,11 @@ const BlogIndex = ({
     <Wrapper>
       <Seo title="All posts" />
       <Navbar />
-      <div className="top-bg-writing"> </div>
+      <div style={{
+        background: 'url("../../images/blog-post-header.svg") top center no-repeat',
+        backgroundSize: "cover",
+        minHeight: "200px"
+      }}> </div>
 
       <div className="writing">
         <div className="writing__header">

@@ -40,7 +40,11 @@ const PostTemplate = ({ data: { previous, next, post } }) => {
   return (
     <Wrapper>
       <Navbar />
-      <div className="top-bg-writing"> </div>
+      <div style={{
+        background: 'url("../../images/blog-post-header.svg") top center no-repeat',
+        backgroundSize: "cover",
+        minHeight: "200px"
+      }}> </div>
       <ArticleWrapper>
         <Title> {parse(post.title)} </Title>
         <div> </div>

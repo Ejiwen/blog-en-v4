@@ -54,14 +54,14 @@ const Projects = () => {
   };
 
   return (
-    <div className="projects-wrap">
+    <div className="projects-wrap" id="projects">
       <ExperienceBttomBg className="topExpBg"></ExperienceBttomBg>
       <div className="projects__header">
         <StaticImage
           src="../../static/images/workSectionPic.svg"
           alt="Projects Intro"
         />
-        <h3> Recent Works </h3>
+        <h3> Recent Projects </h3>
       </div>
       <div className='projects'>
         <Slider {...settings}>
@@ -73,7 +73,7 @@ const Projects = () => {
                 <div className='slider-items'>
                   <div className='slider-images'>
                     <div className='screenshot'>
-                      <img src={project.node.project_screenshot.pageBannerBackgroundImage.sourceUrl} alt="" />
+                      <img src={project.node.project_screenshot.pageBannerBackgroundImage.sourceUrl.replace(/^http:\/\//i, 'https://')} alt="Project Miniature" />
                     </div>
                     <div className='links'>
                       <Link to={project.node.projectInfo.projectLink} target='_blank' >Live</Link>
@@ -88,7 +88,7 @@ const Projects = () => {
                     <h3>{project.node.title}</h3>
                     <p>{parse(project.node.content)}</p>
                   </div>
-                  <div className='slider-logo'><img src={project.node.featuredImage.node.sourceUrl} width="200" alt="Project Logo" /></div>
+                  <div className='slider-logo'><img src={project.node.featuredImage.node.sourceUrl.replace(/^http:\/\//i, 'https://')} width="200" alt="Project Logo" /></div>
                 </div>
 
               </div>

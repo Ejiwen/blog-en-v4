@@ -44,13 +44,14 @@ a {
   text-align: center;
 }
 
-.top-bg-writing {
-  background: url("../../static/images/top-post-header.svg") top center no-repeat;
+/* Took me sometime to fix this background issue 
+.post-intro {
+  background: url("../../static/images/blog-post-header.svg") top center no-repeat;
   background-size: cover;
   min-height: 200px;
   max-height: 200px;
 }
-
+*/
 header {
   background: url("../../static/images/header-mr-sf.svg") top center no-repeat;
   background-size: cover;
