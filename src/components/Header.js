@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useRef } from "react"
+import { Link } from "gatsby"
 import styled from "@emotion/styled"
 import { StaticImage } from "gatsby-plugin-image"
 import Navbar from "./Navbar"
 import SvgHeaderBg from "./SvgHeaderBg"
+import logo from "../../static/images/logoV2-top.svg"
 
 const HeaderBttomBg = styled.div`
   background: url("sectionmask3.svg") no-repeat;
@@ -13,6 +15,10 @@ const HeaderBttomBg = styled.div`
 const Header = ({ title, description }) => {
   return (
     <header style={{ position: "relative" }}>
+
+      <Link to="/">
+        <img className="blogLogo" src={logo} />
+      </Link>
 
       <SvgHeaderBg />
 

@@ -52,6 +52,22 @@ a {
   max-height: 200px;
 }
 */
+header img {
+  position: absolute;
+  background-color: #b7463e;
+  width: 3.5rem;
+  height: 3.5rem;
+  z-index: 2500;
+  border-radius: 50%;
+  margin-top: 0.3rem;
+  margin-left: 0.5rem;
+}
+@media (max-width: 1000px) {
+  header img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
 header #headerSvg {
   height: 100%;
 }
@@ -90,6 +106,11 @@ header .my-bio-container .my-bio .ml2 .letter {
   display: inline-block;
   line-height: 1em;
 }
+@media (max-width: 600px) {
+  header .my-bio-container .my-bio .ml2 {
+    font-size: 1.6em;
+  }
+}
 header .my-bio-container .my-bio p {
   margin: 0;
   font-weight: 700;
@@ -106,13 +127,11 @@ header .my-bio-container .my-bio--role {
   background-color: #fef06973;
   border-left: 2px solid #fef06973;
   box-sizing: content-box;
+  letter-spacing: 0.2rem;
 }
 @media (max-width: 1000px) {
   header .my-bio-container .my-bio h3 {
     font-size: 45px;
-  }
-  header .my-bio-container .my-bio--role {
-    letter-spacing: 0.2rem;
   }
 }
 @media (max-width: 700px) {
@@ -123,39 +142,17 @@ header .my-bio-container .my-bio--role {
     font-size: 0.8rem;
   }
 }
-@media (max-width: 420px) {
-  header .my-bio-container .my-bio h3 {
-    font-size: 30px;
-    letter-spacing: 0.1rem;
-    word-spacing: 0.2rem;
-  }
+@media (max-width: 600px) {
   header .my-bio-container .my-bio p {
     font-size: 0.6rem;
   }
 }
-@media (max-width: 550px) {
-  header .my-bio-container .my-bio h3 {
-    font-size: 16px;
-    letter-spacing: 0.1rem;
-    word-spacing: 0.2rem;
-  }
+@media (max-width: 480px) {
   header .my-bio-container .my-bio p {
-    font-size: 0.6rem;
-    letter-spacing: 0.1rem;
-    word-spacing: 0.2rem;
+    line-height: 0.8rem;
   }
 }
 
-.navigation img {
-  position: absolute;
-  background-color: #b7463e;
-  width: 3.5rem;
-  height: 3.5rem;
-  z-index: 2500;
-  border-radius: 50%;
-  margin-top: 0.3rem;
-  margin-left: 0.5rem;
-}
 .navigation__checkbox {
   display: none;
 }

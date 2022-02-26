@@ -4,6 +4,24 @@ header {
   // background-size: cover;
   // position: relative;
 
+   img {
+    position: absolute;
+    background-color: #b7463e;
+    width: 3.5rem;
+    height: 3.5rem;
+    z-index: 2500;
+    border-radius: 50%;
+    margin-top: 0.3rem;
+    margin-left: 0.5rem;
+  }
+
+  @media (max-width: 1000px) {
+    & img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+
   #headerSvg {
     height: 100%;
   }
@@ -41,6 +59,9 @@ header {
           display: inline-block;
           line-height: 1em;
         }
+        @media (max-width: 600px) {
+          font-size: 1.6em;
+        }
       }
 
       p {
@@ -61,14 +82,12 @@ header {
         background-color: #fef06973;
         border-left: 2px solid #fef06973;
         box-sizing: content-box;
+        letter-spacing: 0.2rem;
       }
 
       @media (max-width: 1000px) {
         h3 {
           font-size: 45px;
-        }
-        &--role {
-          letter-spacing: 0.2rem;
         }
       }
 
@@ -81,29 +100,18 @@ header {
         }
       }
 
-      @media (max-width: 420px) {
-        h3 {
-          font-size: 30px;
-          letter-spacing: 0.1rem;
-          word-spacing: 0.2rem;
-        }
+      @media (max-width: 600px) {
         p {
           font-size: 0.6rem;
         }
       }
 
-      @media (max-width: 550px) {
-        h3 {
-          font-size: 16px;
-          letter-spacing: 0.1rem;
-          word-spacing: 0.2rem;
-        }
+      @media (max-width: 480px) {
         p {
-          font-size: 0.6rem;
-          letter-spacing: 0.1rem;
-          word-spacing: 0.2rem;
+          line-height: .8rem;
         }
       }
+
     }
   }
 }
