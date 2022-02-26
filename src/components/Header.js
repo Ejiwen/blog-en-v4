@@ -1,16 +1,9 @@
 import React, { useState, useEffect, useRef } from "react"
 import { Link } from "gatsby"
-import styled from "@emotion/styled"
 import { StaticImage } from "gatsby-plugin-image"
 import Navbar from "./Navbar"
 import SvgHeaderBg from "./SvgHeaderBg"
 import logo from "../../static/images/logoV2-top.svg"
-
-const HeaderBttomBg = styled.div`
-  background: url("sectionmask3.svg") no-repeat;
-  background-size: cover;
-  height: 72px;
-`
 
 const Header = ({ title, description }) => {
   return (
@@ -21,6 +14,11 @@ const Header = ({ title, description }) => {
       </Link>
 
       <SvgHeaderBg />
+      <div className="btm-header">
+        <svg height="70" width="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M1633 70H.115C172.533 27.895 473.772 0 816.557 0 1159.34 0 1460.58 27.895 1633 70Z" fill="#fff" />
+        </svg>
+      </div>
 
       <Navbar style={{ position: "absolute" }} />
 
@@ -43,7 +41,7 @@ const Header = ({ title, description }) => {
         alt="Image retro"
       /> */}
 
-      <HeaderBttomBg className="btm-header"></HeaderBttomBg>
+      {/* <HeaderBttomBg className="btm-header"></HeaderBttomBg> */}
     </header>
   )
 }

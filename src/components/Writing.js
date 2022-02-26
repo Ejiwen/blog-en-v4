@@ -2,6 +2,7 @@ import React, { useContext } from "react"
 import Post from "./Post"
 import headerWriting from "../../static/images/writingBg.svg"
 
+
 const Writing = ({ allWpPost: { nodes } }) => {
 
   return (

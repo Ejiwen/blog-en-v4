@@ -15,6 +15,16 @@ header {
     margin-left: 0.5rem;
   }
 
+  .btm-header {
+    position: relative;
+    margin-top: -77px;
+    @media (min-width: 1600px) {
+      background: url("./sectionmask3.svg") top left no-repeat;
+      background-size: cover;
+      background-position-x: 902px;
+    }
+  }
+
   @media (max-width: 1000px) {
     & img {
       width: 2.5rem;
