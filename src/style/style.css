@@ -52,11 +52,6 @@ a {
   max-height: 200px;
 }
 */
-header {
-  background: url("../../static/images/header-mr-sf.svg") top center no-repeat;
-  background-size: cover;
-  position: relative;
-}
 header .my-bio-container {
   display: flex;
   position: absolute;

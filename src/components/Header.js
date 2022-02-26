@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react"
 import styled from "@emotion/styled"
 import { StaticImage } from "gatsby-plugin-image"
 import Navbar from "./Navbar"
+import SvgHeaderBg from "./SvgHeaderBg"
 
 const HeaderBttomBg = styled.div`
   background: url("sectionmask3.svg") no-repeat;
@@ -12,6 +13,9 @@ const HeaderBttomBg = styled.div`
 const Header = ({ title, description }) => {
   return (
     <header style={{ position: "relative" }}>
+
+      <SvgHeaderBg />
+
       <Navbar style={{ position: "absolute" }} />
 
       <div className="my-bio-container">
