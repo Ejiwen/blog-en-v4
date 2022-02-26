@@ -6,7 +6,6 @@ import Footer from "./Footer"
 import Projects from "./Projects"
 
 
-
 const Layout = ({ isBlogPage, children }) => {
   const {
     wp: {

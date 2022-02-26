@@ -30,11 +30,13 @@ const Header = ({ title, description }) => {
           </div>
         </div>
       </div>
-      <StaticImage
+
+      {/* <StaticImage
         src="../../static/images/header-mr-sf.svg"
         style={{ visibility: "hidden", height: "600px" }}
         alt="Image retro"
-      />
+      /> */}
+
       <HeaderBttomBg className="btm-header"></HeaderBttomBg>
     </header>
   )

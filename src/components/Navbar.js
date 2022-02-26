@@ -13,9 +13,10 @@ const Navbar = () => {
       <label className="navigation__label" for="checkLabel">
         <span className="navigation__icon">&nbsp;</span>
       </label>
-      <Link to="/">
+
+      {/* <Link to="/">
         <img className="blogLogo" src={logo} />
-      </Link>
+      </Link> */}
 
       <div className="navigation__menu">
         <ul className="navigation__list">

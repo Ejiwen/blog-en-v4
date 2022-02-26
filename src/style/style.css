@@ -52,6 +52,9 @@ a {
   max-height: 200px;
 }
 */
+header #headerSvg {
+  height: 100%;
+}
 header .my-bio-container {
   display: flex;
   position: absolute;
