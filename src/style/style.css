@@ -41,6 +41,47 @@
   color: #feeb60;
 }
 
+.light-theme {
+  background-color: #fff;
+}
+.light-theme h3 {
+  color: #b7463e;
+}
+.light-theme .svg-seperator {
+  fill: #fff;
+}
+.light-theme .writing .svgHeader__loh {
+  fill: #d3a680;
+}
+.light-theme .writing .post-content .post-info-title {
+  color: #b7463e;
+}
+.light-theme .writing .post-content .post-info {
+  background-color: #fff;
+  color: #181A1B;
+}
+.light-theme .writing .post-content .post-pic svg {
+  fill: #fff;
+}
+.light-theme .projects-wrap .palmiers {
+  fill: #1b3804;
+}
+.light-theme .projects-wrap .slider-items {
+  color: #181A1B;
+}
+.light-theme .projects-wrap .slider-items .slider-details {
+  background-color: #feeb60;
+}
+.light-theme .projects-wrap .slider-items li::before {
+  color: #b7463e;
+}
+.light-theme .projects-wrap .projects .slick-prev:before {
+  color: #b7463e;
+}
+.light-theme .projects-wrap .projects .slick-next:before {
+  color: #b7463e;
+}
+
 .colorTheme {
   height: 100vh;
   transition: 0.3s ease-in-out;

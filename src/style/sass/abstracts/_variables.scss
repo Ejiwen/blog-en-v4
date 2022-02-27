@@ -1,6 +1,8 @@
 $white-light: #f9f0f0;
+$white: #fff;
 
 $maroon: #b7463e;
+$dark-maroon: #d3a680;
 $black: #181A1B;
 $dark-green: #1b3804;
 $dark-blue: hsl(215, 100%, 11%);
@@ -61,6 +63,62 @@ $light-yellow: #feeb60;
         }
     }
 
+}
 
+// Light theme
+.light-theme {
+    background-color: $white;
+    h3 {
+        color: $maroon;
+       }
+    .svg-seperator {
+        fill: $white;
+    }
+
+    // Writing Component
+    .writing { 
+        .svgHeader  {
+            &__loh {
+              fill: $dark-maroon;
+            }
+          }
+     .post-content {
+        .post-info-title {
+            color: $maroon;
+        }
+        .post-info {
+            background-color: $white;
+            color: $black;
+        }
+        .post-pic svg {
+            fill: $white;
+        }
+     }
+    }
+
+    // Projects
+    .projects-wrap {
+        .palmiers {
+            fill: $dark-green;
+        }
+        .slider-items {
+            color: $black;
+            .slider-details {
+                background-color: $light-yellow;
+            }
+            
+            li::before {
+             color:$maroon;
+            }
+        }
+        .projects {
+            .slick-prev:before {
+                color: $maroon;
+              }
+              .slick-next:before {
+                color: $maroon;
+              }
+        }
+    }
 
 }

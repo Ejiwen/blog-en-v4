@@ -24,7 +24,7 @@ const Layout = ({ isBlogPage, children }) => {
 
 
   return (
-    <div className="global-wrapper dark-theme" data-is-root-path={isBlogPage}>
+    <div className="global-wrapper light-theme" data-is-root-path={isBlogPage}>
       <Header title={parse(title)} description={parse(description)} />
 
       <main>{children}</main>
