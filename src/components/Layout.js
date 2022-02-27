@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import { Link, useStaticQuery, graphql } from "gatsby"
 import parse from "html-react-parser"
 import Header from "./Header"
 import Footer from "./Footer"
 import Projects from "./Projects"
+import ThemeContext from "./context";
 
 
 const Layout = ({ isBlogPage, children }) => {
+  const [theme, setTheme] = useContext(ThemeContext);
   const {
     wp: {
       generalSettings: { title, description },
@@ -24,7 +26,7 @@ const Layout = ({ isBlogPage, children }) => {
 
 
   return (
-    <div className="global-wrapper light-theme" data-is-root-path={isBlogPage}>
+    <div className={theme} data-is-root-path={isBlogPage}>
       <Header title={parse(title)} description={parse(description)} />
 
       <main>{children}</main>

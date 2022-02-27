@@ -1,14 +1,19 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Writing from "../components/Writing"
+import ThemeContext from "../components/context";
 
 
 export default function Home({ data }) {
+  // top of App function body
+  const theme = useState("light-theme");
   return (
-    <Layout>
-      <Writing {...data} />
-    </Layout>
+    <ThemeContext.Provider value={theme}>
+      <Layout>
+        <Writing {...data} />
+      </Layout>
+    </ThemeContext.Provider>
   )
 }
 

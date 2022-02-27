@@ -1,16 +1,21 @@
-import React, { useState, useEffect, useRef } from "react"
+import React, { useState, useEffect, useRef, useContext } from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Navbar from "./Navbar"
 import SvgHeaderBg from "./SvgHeaderBg"
 import logo from "../../static/images/logoV2-top.svg"
+import ThemeContext from "./context";
 
 const Header = ({ title, description }) => {
+  const [theme, setTheme] = useContext(ThemeContext);
+
+
   return (
     <header style={{ position: "relative" }}>
 
       <Link to="/">
         <img className="blogLogo" src={logo} />
+        <h3 onClick={() => setTheme("dark-theme")}>Theme Switcher</h3>
       </Link>
 
       <SvgHeaderBg />
