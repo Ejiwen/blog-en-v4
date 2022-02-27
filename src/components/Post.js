@@ -47,7 +47,6 @@ const Post = ({
           <path
             d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500"
             stroke="transparent"
-            fill="#fff"
           ></path>
           <path
             class="card__line"
@@ -64,7 +63,7 @@ const Post = ({
           <Link to={uri}>{title}</Link>{" "}
         </div>
         <div>
-          <p className="post-info-intro">
+          <p>
             {parse(excerpt.substr(0, 160) + "...")}
             <ReadMore>
               <Link to={uri}>

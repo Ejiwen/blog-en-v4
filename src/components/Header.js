@@ -15,8 +15,8 @@ const Header = ({ title, description }) => {
 
       <SvgHeaderBg />
       <div className="btm-header">
-        <svg height="70" width="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M1633 70H.115C172.533 27.895 473.772 0 816.557 0 1159.34 0 1460.58 27.895 1633 70Z" fill="#fff" />
+        <svg className="svg-seperator" height="70" width="100%" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1633 70H.115C172.533 27.895 473.772 0 816.557 0 1159.34 0 1460.58 27.895 1633 70Z" />
         </svg>
       </div>
 

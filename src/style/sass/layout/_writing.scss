@@ -6,10 +6,12 @@
   align-items: center;
   max-width: 1200px;
   margin: auto;
-  color: black;
+
+  h3 {
+    color: $maroon;
+  }
 
   &__header {
-    color: #b7463e;
     display: flex;
     align-items: center;
     padding-top: 20px;

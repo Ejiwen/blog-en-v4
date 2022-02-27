@@ -1,9 +1,34 @@
-$color-text-main: "#4D5362";
-$color-text-secondary: rgb(175, 41, 41);
-
-$bg-header: #7ed56f;
-
-$color-bg-primary: #7ed56f;
-$color-bg-secondary: #28b485;
-
 $white-light: #f9f0f0;
+
+$maroon: #b7463e;
+$black: black;
+$dark-green: #1b3804;
+$dark-blue: hsl(215, 100%, 11%);
+$light-yellow: #feeb60;
+
+.dark-theme {
+    background-color: $dark-blue;
+
+    .svg-seperator {
+        fill: $dark-blue;
+    }
+    // Writing Component
+    .writing { 
+        h3 {
+         color: $light-yellow ;
+        }
+     .post-content {
+        .post-info-title {
+            color: $light-yellow ;
+        }
+        .post-info {
+            background-color: $dark-green;
+            color: $white-light;
+        }
+        .post-pic svg {
+            fill: $dark-green;
+        }
+     }
+    }
+
+}

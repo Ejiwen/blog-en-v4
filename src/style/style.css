@@ -1,5 +1,25 @@
 @charset "UTF-8";
 @import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+.dark-theme {
+  background-color: #001738;
+}
+.dark-theme .svg-seperator {
+  fill: #001738;
+}
+.dark-theme .writing h3 {
+  color: #feeb60;
+}
+.dark-theme .writing .post-content .post-info-title {
+  color: #feeb60;
+}
+.dark-theme .writing .post-content .post-info {
+  background-color: #1b3804;
+  color: #f9f0f0;
+}
+.dark-theme .writing .post-content .post-pic svg {
+  fill: #1b3804;
+}
+
 .colorTheme {
   height: 100vh;
   transition: 0.3s ease-in-out;
@@ -19,10 +39,6 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-}
-
-body {
-  color: "#4D5362";
 }
 
 .container {
@@ -499,10 +515,11 @@ footer .contact-me .contact-form button[type=submit] {
   align-items: center;
   max-width: 1200px;
   margin: auto;
-  color: black;
+}
+.writing h3 {
+  color: #b7463e;
 }
 .writing__header {
-  color: #b7463e;
   display: flex;
   align-items: center;
   padding-top: 20px;
@@ -703,7 +720,7 @@ footer .contact-me .contact-form button[type=submit] {
 }
 .projects-wrap .projects__header h3 {
   font-size: xx-large;
-  width: 212px;
+  width: 240px;
 }
 @media (max-width: 500px) {
   .projects-wrap .projects__header h3 {
