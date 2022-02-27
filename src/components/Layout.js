@@ -8,7 +8,9 @@ import ThemeContext from "./context";
 
 
 const Layout = ({ isBlogPage, children }) => {
-  const [theme, setTheme] = useContext(ThemeContext);
+
+  let theme = localStorage.getItem("theme")
+
   const {
     wp: {
       generalSettings: { title, description },
