@@ -1,6 +1,6 @@
 import React, { useContext } from "react"
 import Post from "./Post"
-import headerWriting from "../../static/images/writingBg.svg"
+import WritingSvgHeader from "./svgComponent/WritingSvgHeader"
 
 
 const Writing = ({ allWpPost: { nodes } }) => {
@@ -9,7 +9,8 @@ const Writing = ({ allWpPost: { nodes } }) => {
     <div>
       <div className="writing">
         <div className="writing__header">
-          <img src={headerWriting} />
+          {/* <img src={headerWriting} /> */}
+          <WritingSvgHeader />
           <h3> Recent Posts </h3>
         </div>
 

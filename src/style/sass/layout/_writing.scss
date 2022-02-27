@@ -7,18 +7,11 @@
   max-width: 1200px;
   margin: auto;
 
-  h3 {
-    color: $maroon;
-  }
 
   &__header {
     display: flex;
     align-items: center;
     padding-top: 20px;
-
-    img {
-      width: 200px;
-    }
 
     h3 {
       font-size: xx-large;

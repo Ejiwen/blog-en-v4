@@ -1,34 +1,66 @@
 $white-light: #f9f0f0;
 
 $maroon: #b7463e;
-$black: black;
+$black: #181A1B;
 $dark-green: #1b3804;
 $dark-blue: hsl(215, 100%, 11%);
 $light-yellow: #feeb60;
 
 .dark-theme {
     background-color: $dark-blue;
-
+    h3 {
+        color: $light-yellow ;
+       }
     .svg-seperator {
         fill: $dark-blue;
     }
+
     // Writing Component
     .writing { 
-        h3 {
-         color: $light-yellow ;
-        }
+        .svgHeader  {
+            &__loh {
+              fill: $light-yellow;
+            }
+          }
      .post-content {
         .post-info-title {
-            color: $light-yellow ;
+            color: $light-yellow;
         }
         .post-info {
-            background-color: $dark-green;
+            background-color: $black;
             color: $white-light;
         }
         .post-pic svg {
-            fill: $dark-green;
+            fill: $black;
         }
      }
     }
+
+    // Projects
+    .projects-wrap {
+        .palmiers {
+            fill: $dark-green;
+        }
+        .slider-items {
+            color: $white-light;
+            .slider-details {
+                background-color: $black;
+            }
+            
+            li::before {
+             color:#ffa107;
+            }
+        }
+        .projects {
+            .slick-prev:before {
+                color: $light-yellow;
+              }
+              .slick-next:before {
+                color: $light-yellow;
+              }
+        }
+    }
+
+
 
 }

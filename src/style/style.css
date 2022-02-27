@@ -3,21 +3,42 @@
 .dark-theme {
   background-color: #001738;
 }
+.dark-theme h3 {
+  color: #feeb60;
+}
 .dark-theme .svg-seperator {
   fill: #001738;
 }
-.dark-theme .writing h3 {
-  color: #feeb60;
+.dark-theme .writing .svgHeader__loh {
+  fill: #feeb60;
 }
 .dark-theme .writing .post-content .post-info-title {
   color: #feeb60;
 }
 .dark-theme .writing .post-content .post-info {
-  background-color: #1b3804;
+  background-color: #181A1B;
   color: #f9f0f0;
 }
 .dark-theme .writing .post-content .post-pic svg {
+  fill: #181A1B;
+}
+.dark-theme .projects-wrap .palmiers {
   fill: #1b3804;
+}
+.dark-theme .projects-wrap .slider-items {
+  color: #f9f0f0;
+}
+.dark-theme .projects-wrap .slider-items .slider-details {
+  background-color: #181A1B;
+}
+.dark-theme .projects-wrap .slider-items li::before {
+  color: #ffa107;
+}
+.dark-theme .projects-wrap .projects .slick-prev:before {
+  color: #feeb60;
+}
+.dark-theme .projects-wrap .projects .slick-next:before {
+  color: #feeb60;
 }
 
 .colorTheme {
@@ -516,16 +537,10 @@ footer .contact-me .contact-form button[type=submit] {
   max-width: 1200px;
   margin: auto;
 }
-.writing h3 {
-  color: #b7463e;
-}
 .writing__header {
   display: flex;
   align-items: center;
   padding-top: 20px;
-}
-.writing__header img {
-  width: 200px;
 }
 .writing__header h3 {
   font-size: xx-large;
@@ -678,12 +693,10 @@ footer .contact-me .contact-form button[type=submit] {
 }
 .projects-wrap .projects__slider .slider-items .slider-details {
   padding: 10px 100px;
-  background-color: #feeb60;
   border-radius: 15px;
 }
 .projects-wrap .projects__slider .slider-items .slider-details ul {
   list-style: none;
-  color: #191818;
   margin: 0;
 }
 .projects-wrap .projects__slider .slider-items .slider-details ul::before {
@@ -695,7 +708,6 @@ footer .contact-me .contact-form button[type=submit] {
   margin: 0;
 }
 .projects-wrap .projects__slider .slider-items .slider-details ul li::before {
-  color: #b7453e;
   content: "\f058 ";
   /* You should use \ and not /*/
   font-family: "Font Awesome 5 Free";
@@ -709,7 +721,6 @@ footer .contact-me .contact-form button[type=submit] {
   padding: 20px;
 }
 .projects-wrap .projects__header {
-  color: #b7463e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -732,14 +743,7 @@ footer .contact-me .contact-form button[type=submit] {
 }
 .projects-wrap .topExpBg {
   transform: rotate(180deg);
-}
-
-.slick-prev:before {
-  color: #b6443d !important;
-}
-
-.slick-next:before {
-  color: #b6443d !important;
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

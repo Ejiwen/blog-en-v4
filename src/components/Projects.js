@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "@emotion/styled"
 import parse from "html-react-parser"
+import ProjectSvgHeader from "./svgComponent/ProjectSvgHeader"
 
 
 const ExperienceBttomBg = styled.div`
@@ -57,10 +58,11 @@ const Projects = () => {
     <div className="projects-wrap" id="projects">
       <ExperienceBttomBg className="topExpBg"></ExperienceBttomBg>
       <div className="projects__header">
-        <StaticImage
+        {/* <StaticImage
           src="../../static/images/workSectionPic.svg"
           alt="Projects Intro"
-        />
+        /> */}
+        <ProjectSvgHeader />
         <h3> Recent Projects </h3>
       </div>
       <div className='projects'>
@@ -98,7 +100,7 @@ const Projects = () => {
           }
         </Slider>
       </div >
-      <ExperienceBttomBg ></ExperienceBttomBg>
+      <ExperienceBttomBg style={{ visibility: "hidden" }}></ExperienceBttomBg>
     </div >
   );
 }

@@ -94,12 +94,12 @@
 
         .slider-details {
           padding: 10px 100px;
-          background-color: #feeb60;
+          // background-color: #feeb60;
           border-radius: 15px;
 
           ul {
             list-style: none;
-            color: #191818;
+            // color: #191818;
             margin: 0;
 
             &::before {
@@ -113,7 +113,6 @@
               margin: 0;
 
               &::before {
-                color:#b7453e;
                 content: '\f058 \00A0'; /* You should use \ and not /*/
                 font-family: "Font Awesome 5 Free"; /* This is the correct font-family*/
                 font-style: normal;
@@ -134,7 +133,6 @@
     }
 
     &__header {
-      color: #b7463e;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -162,14 +160,7 @@
   }
   .topExpBg {
     transform: rotate(180deg);
+    visibility: hidden;
   }
 
-}
-
-// Slider button navigation
-.slick-prev:before {
-  color: #b6443d !important;
-}
-.slick-next:before {
-  color: #b6443d !important;
 }
