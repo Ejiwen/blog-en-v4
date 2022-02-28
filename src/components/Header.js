@@ -9,8 +9,10 @@ import ThemeContext from "./context";
 const Header = ({ title, description }) => {
   const [theme, setTheme] = useContext(ThemeContext);
   function toggleTheme() {
-    setTheme(prevTheme => (prevTheme === "light-theme" ? "dark-theme" : "light-theme"));
+    console.log("hi!!!!");
     localStorage.setItem("theme", theme);
+    setTheme(prevTheme => (prevTheme === "light-theme" ? "dark-theme" : "light-theme"));
+
   }
 
   return (
