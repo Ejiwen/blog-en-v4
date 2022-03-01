@@ -5,12 +5,7 @@ import styled from "@emotion/styled"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faAngleDoubleRight,
-  faArrowRight,
-  faClock,
   faHourglassStart,
-  faLongArrowAltRight,
-  faTag,
-  faUserClock,
 } from "@fortawesome/free-solid-svg-icons"
 import parse from "html-react-parser"
 

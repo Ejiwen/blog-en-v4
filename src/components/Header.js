@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useContext } from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 import Navbar from "./Navbar"
 import SvgHeaderBg from "./SvgHeaderBg"
 import logo from "../../static/images/logoV2-top.svg"
