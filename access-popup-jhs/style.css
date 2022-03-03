@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.access-popup {
+  font-family: "Poppins", sans-serif;
+  background: url("https://fictional-university.ejiwen.info/access-jhs/access-popup-bg.svg")
+    no-repeat;
+  width: 400px;
+  height: 400px;
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  z-index: 777;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__image {
+  margin-top: 45px;
+}
+
+.content__date {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 60px;
+  text-align: center;
+  color: #9ee227;
+  margin-bottom: 0;
+}
+
+.content__text {
+  color: white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.content__btn {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 12px 20px;
+  margin-top: 19px;
+  color: white;
+  background: #130f3c;
+  border-radius: 4px;
+}
