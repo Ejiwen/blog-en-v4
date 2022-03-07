@@ -8,8 +8,8 @@ import ThemeContext from "./context";
 
 
 const Layout = ({ isBlogPage, children }) => {
-  let [theme] = useContext(ThemeContext);
-  //let theme = localStorage.getItem("theme") ;
+  //let [theme] = useContext(ThemeContext);
+  let theme = localStorage.getItem("theme");
 
   const {
     wp: {
