@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Writing from "../components/Writing"
@@ -8,6 +8,7 @@ import ThemeContext from "../components/context";
 export default function Home({ data }) {
   // top of App function body
   const theme = useState("light-theme");
+
   return (
     <ThemeContext.Provider value={theme}>
       <Layout>

@@ -1,5 +1,8 @@
 import { createContext } from "react";
 
-const ThemeContext = createContext(["", () => { }]);
+// localStorage.setItem("theme", "light-theme");
+
+// const ThemeContext = createContext(["light-theme", () => { }]);
+const ThemeContext = createContext();
 
 export default ThemeContext;

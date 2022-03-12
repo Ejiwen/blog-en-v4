@@ -9,11 +9,10 @@ import ThemeContext from "./context";
 const Header = ({ title, description }) => {
   const [theme, setTheme] = useContext(ThemeContext);
   function toggleTheme() {
-    console.log("hi!!!!");
-    localStorage.setItem("theme", theme);
-    setTheme(prevTheme => (prevTheme === "light-theme" ? "dark-theme" : "light-theme"));
-
+    setTheme(prevTheme => (prevTheme == "dark-theme" ? "light-theme" : "dark-theme"));
+    // localStorage.setItem("theme", theme);
   }
+
 
   return (
     <header style={{ position: "relative" }}>
