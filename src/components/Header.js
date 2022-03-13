@@ -10,7 +10,7 @@ const Header = ({ title, description }) => {
   const [theme, setTheme] = useContext(ThemeContext);
   function toggleTheme() {
     setTheme(prevTheme => (prevTheme == "dark-theme" ? "light-theme" : "dark-theme"));
-    // localStorage.setItem("theme", theme);
+    localStorage.setItem("theme", theme);
   }
 
 

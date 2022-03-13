@@ -10,15 +10,7 @@ import ThemeContext from "./context";
 const Layout = ({ isBlogPage, children }) => {
   //let [theme] = useContext(ThemeContext);
   //let theme = localStorage.getItem("theme");
-  // let theme = localStorage.getItem('theme') || 'light-theme';
-  // localStorage.setItem("theme", useContext(ThemeContext));
-
-  const [theme, setTheme] = useContext(ThemeContext);
-  let themy = localStorage.getItem('theme') || theme;
-  function toggleTheme() {
-    setTheme(prevTheme => (prevTheme == "dark-theme" ? "light-theme" : "dark-theme"));
-    localStorage.setItem("theme", theme);
-  }
+  let theme = localStorage.getItem('theme') || 'light-theme';
 
 
   const {
@@ -38,8 +30,7 @@ const Layout = ({ isBlogPage, children }) => {
 
 
   return (
-    <div className={themy} data-is-root-path={isBlogPage}>
-      <h1 onClick={toggleTheme}>HERE !!!!!!!</h1>
+    <div className={theme} data-is-root-path={isBlogPage}>
       <Header title={parse(title)} description={parse(description)} />
 
       <main>{children}</main>
