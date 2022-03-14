@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useContext } from "react"
+import React, { useContext } from "react"
 import { Link } from "gatsby"
 // import { StaticImage } from "gatsby-plugin-image"
 import Navbar from "./Navbar"
@@ -9,10 +9,8 @@ import ThemeContext from "./context";
 const Header = ({ title, description }) => {
   const [theme, setTheme] = useContext(ThemeContext);
   function toggleTheme() {
-    setTheme(prevTheme => (prevTheme == "dark-theme" ? "light-theme" : "dark-theme"));
     localStorage.setItem("theme", theme);
   }
-
 
   return (
     <header style={{ position: "relative" }}>

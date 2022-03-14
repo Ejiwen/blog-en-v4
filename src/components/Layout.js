@@ -8,9 +8,9 @@ import ThemeContext from "./context";
 
 
 const Layout = ({ isBlogPage, children }) => {
-  //let [theme] = useContext(ThemeContext);
+  let [theme] = useContext(ThemeContext);
   //let theme = localStorage.getItem("theme");
-  let theme = localStorage.getItem('theme') || 'light-theme';
+  let themy = localStorage.getItem('theme') || theme;
 
 
   const {
@@ -30,7 +30,7 @@ const Layout = ({ isBlogPage, children }) => {
 
 
   return (
-    <div className={theme} data-is-root-path={isBlogPage}>
+    <div className={themy} data-is-root-path={isBlogPage}>
       <Header title={parse(title)} description={parse(description)} />
 
       <main>{children}</main>
