@@ -349,6 +349,7 @@ header .my-bio-container .my-bio--role {
   display: inline-flex;
   list-style: none;
   background: #b7463e;
+  color: white;
   position: fixed;
   top: 0.5rem;
   right: 0.5rem;
