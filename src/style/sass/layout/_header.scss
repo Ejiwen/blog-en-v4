@@ -18,10 +18,9 @@ header {
   .btm-header {
     position: relative;
     margin-top: -77px;
+    isplay: block;
     @media (min-width: 1600px) {
-      background: url("./sectionmask3.svg") top left no-repeat;
-      background-size: cover;
-      background-position-x: 902px;
+      display: none;
     }
   }
 

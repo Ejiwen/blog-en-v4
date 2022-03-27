@@ -43,6 +43,9 @@ $light-yellow: #feeb60;
             .jmel {
                 fill: #5d1502;
             }
+            .njoums {
+                display: block;
+            }
         }
     }
 
@@ -77,12 +80,14 @@ $light-yellow: #feeb60;
             }
           }
      .post-content {
-        .post-info-title {
-            color: $light-yellow;
-        }
         .post-info {
             background-color: $black;
             color: $white-light;
+            &-title {
+                a{
+                    color: $light-yellow; 
+                }
+            }
         }
         .post-pic svg {
             fill: $black;
@@ -158,6 +163,9 @@ $light-yellow: #feeb60;
             .jmel {
                 fill: #ffa207;
             }
+            .njoums {
+                display: none;
+            }
         }
     }
 
@@ -187,12 +195,14 @@ $light-yellow: #feeb60;
             }
           }
      .post-content {
-        .post-info-title {
-            color: $maroon;
-        }
         .post-info {
             background-color: $white;
             color: $black;
+            &-title { 
+                a{
+                  color: $maroon;  
+                }
+            }
         }
         .post-pic svg {
             fill: $white;

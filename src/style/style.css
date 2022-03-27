@@ -30,6 +30,9 @@
 .dark-theme header #headerSvg .jmel {
   fill: #5d1502;
 }
+.dark-theme header #headerSvg .njoums {
+  display: block;
+}
 .dark-theme .my-bio {
   color: #1b3803;
 }
@@ -49,12 +52,12 @@
 .dark-theme .writing .svgHeader__loh {
   fill: #feeb60;
 }
-.dark-theme .writing .post-content .post-info-title {
-  color: #feeb60;
-}
 .dark-theme .writing .post-content .post-info {
   background-color: #181A1B;
   color: #f9f0f0;
+}
+.dark-theme .writing .post-content .post-info-title a {
+  color: #feeb60;
 }
 .dark-theme .writing .post-content .post-pic svg {
   fill: #181A1B;
@@ -111,6 +114,9 @@
 .light-theme header #headerSvg .jmel {
   fill: #ffa207;
 }
+.light-theme header #headerSvg .njoums {
+  display: none;
+}
 .light-theme .my-bio {
   color: #1b3803;
 }
@@ -127,12 +133,12 @@
 .light-theme .writing .svgHeader__loh {
   fill: #d3a680;
 }
-.light-theme .writing .post-content .post-info-title {
-  color: #b7463e;
-}
 .light-theme .writing .post-content .post-info {
   background-color: #fff;
   color: #181A1B;
+}
+.light-theme .writing .post-content .post-info-title a {
+  color: #b7463e;
 }
 .light-theme .writing .post-content .post-pic svg {
   fill: #fff;
@@ -223,12 +229,11 @@ header img {
 header .btm-header {
   position: relative;
   margin-top: -77px;
+  isplay: block;
 }
 @media (min-width: 1600px) {
   header .btm-header {
-    background: url("./sectionmask3.svg") top left no-repeat;
-    background-size: cover;
-    background-position-x: 902px;
+    display: none;
   }
 }
 @media (max-width: 1000px) {
@@ -719,7 +724,6 @@ footer .contact-me .contact-form button[type=submit] {
   padding: 0 8px 0 8px;
 }
 .post-info-title {
-  color: #bd5b1a;
   font-weight: bolder;
 }
 .post-info-tags {
