@@ -9,6 +9,7 @@ $dark-blue: hsl(215, 100%, 11%);
 $light-yellow: #feeb60;
 
 .dark-theme {
+
     background-color: $dark-blue;
     h3 {
         color: $light-yellow ;
@@ -16,6 +17,57 @@ $light-yellow: #feeb60;
     .svg-seperator {
         fill: $dark-blue;
     }
+
+    
+    // header SVG
+    header {
+        #headerSvg {
+            .sky-background {
+                fill: #034450;
+            }
+              .mzoun {
+                display: none;
+            }
+            .sun-moon {
+                fill: white;
+            }
+            .chinguity {
+                fill: #672411;
+            }
+            .zirrat {
+                fill: #5d1602;
+            }
+            .jmoule-nkhel {
+                fill:#672411;
+            }
+            .jmel {
+                fill: #5d1502;
+            }
+        }
+    }
+
+    // bio 
+    .my-bio {
+        color: #1b3803;
+        h3 {
+            //
+        }
+        p {
+            color: #feeb60;
+        }
+        &--role {
+            background-color: #093610a6;
+            border-left: none;
+            // color: white;
+          }
+          &--begin {
+            border-bottom: 2px solid white;
+          }
+          &--fin {
+            border-top: 2px solid white;
+          }
+    }
+
 
     // Writing Component
     .writing { 
@@ -73,6 +125,48 @@ $light-yellow: #feeb60;
        }
     .svg-seperator {
         fill: $white;
+    }
+
+    // header SVG
+    header {
+        #headerSvg {
+            .sky-background {
+                fill: #ffbe51;
+            }
+            .sun-moon {
+                fill: #fef069;
+            }
+            .chinguity {
+                fill: #fb7d00;
+            }
+            .zirrat {
+                fill: #ffa207;
+            }
+            .jmoule-nkhel {
+                fill:#ffa207;
+            }
+            .jmel {
+                fill: #ffa207;
+            }
+        }
+    }
+
+    // bio 
+    .my-bio {
+        color: #1b3803;
+        h3 {
+            //
+        }
+        &--role {
+            background-color: #fef06973;
+            border-left: 2px solid #fef06973;
+          }
+          &--begin {
+            border-bottom: 2px solid black;
+          }
+          &--fin {
+            border-top: 2px solid black;
+          }
     }
 
     // Writing Component

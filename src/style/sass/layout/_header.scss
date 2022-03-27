@@ -79,18 +79,9 @@ header {
         font-weight: 700;
       }
 
-      &--begin {
-        border-bottom: 2px solid black;
-      }
-      &--fin {
-        border-top: 2px solid black;
-      }
-
       &--role {
         font-weight: 700;
         letter-spacing: 0.3rem;
-        background-color: #fef06973;
-        border-left: 2px solid #fef06973;
         box-sizing: content-box;
         letter-spacing: 0.2rem;
       }

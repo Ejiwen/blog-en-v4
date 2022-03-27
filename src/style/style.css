@@ -9,6 +9,43 @@
 .dark-theme .svg-seperator {
   fill: #001738;
 }
+.dark-theme header #headerSvg .sky-background {
+  fill: #034450;
+}
+.dark-theme header #headerSvg .mzoun {
+  display: none;
+}
+.dark-theme header #headerSvg .sun-moon {
+  fill: white;
+}
+.dark-theme header #headerSvg .chinguity {
+  fill: #672411;
+}
+.dark-theme header #headerSvg .zirrat {
+  fill: #5d1602;
+}
+.dark-theme header #headerSvg .jmoule-nkhel {
+  fill: #672411;
+}
+.dark-theme header #headerSvg .jmel {
+  fill: #5d1502;
+}
+.dark-theme .my-bio {
+  color: #1b3803;
+}
+.dark-theme .my-bio p {
+  color: #feeb60;
+}
+.dark-theme .my-bio--role {
+  background-color: #093610a6;
+  border-left: none;
+}
+.dark-theme .my-bio--begin {
+  border-bottom: 2px solid white;
+}
+.dark-theme .my-bio--fin {
+  border-top: 2px solid white;
+}
 .dark-theme .writing .svgHeader__loh {
   fill: #feeb60;
 }
@@ -49,6 +86,37 @@
 }
 .light-theme .svg-seperator {
   fill: #fff;
+}
+.light-theme header #headerSvg .sky-background {
+  fill: #ffbe51;
+}
+.light-theme header #headerSvg .sun-moon {
+  fill: #fef069;
+}
+.light-theme header #headerSvg .chinguity {
+  fill: #fb7d00;
+}
+.light-theme header #headerSvg .zirrat {
+  fill: #ffa207;
+}
+.light-theme header #headerSvg .jmoule-nkhel {
+  fill: #ffa207;
+}
+.light-theme header #headerSvg .jmel {
+  fill: #ffa207;
+}
+.light-theme .my-bio {
+  color: #1b3803;
+}
+.light-theme .my-bio--role {
+  background-color: #fef06973;
+  border-left: 2px solid #fef06973;
+}
+.light-theme .my-bio--begin {
+  border-bottom: 2px solid black;
+}
+.light-theme .my-bio--fin {
+  border-top: 2px solid black;
 }
 .light-theme .writing .svgHeader__loh {
   fill: #d3a680;
@@ -204,17 +272,9 @@ header .my-bio-container .my-bio p {
   margin: 0;
   font-weight: 700;
 }
-header .my-bio-container .my-bio--begin {
-  border-bottom: 2px solid black;
-}
-header .my-bio-container .my-bio--fin {
-  border-top: 2px solid black;
-}
 header .my-bio-container .my-bio--role {
   font-weight: 700;
   letter-spacing: 0.3rem;
-  background-color: #fef06973;
-  border-left: 2px solid #fef06973;
   box-sizing: content-box;
   letter-spacing: 0.2rem;
 }
