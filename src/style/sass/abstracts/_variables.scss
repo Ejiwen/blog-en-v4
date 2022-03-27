@@ -53,7 +53,10 @@ $light-yellow: #feeb60;
     .my-bio {
         color: #1b3803;
         h3 {
-            //
+            -webkit-text-fill-color: #fff;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #181a1b;
+            text-shadow: 2px 4px #001738, -2px 6px #034450;
         }
         p {
             color: #feeb60;
@@ -173,7 +176,10 @@ $light-yellow: #feeb60;
     .my-bio {
         color: #1b3803;
         h3 {
-            //
+            -webkit-text-fill-color: #1b3803;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #ffffff;
+            text-shadow: 2px 4px #1b3803, -2px 6px #b7463e;
         }
         &--role {
             background-color: #fef06973;
