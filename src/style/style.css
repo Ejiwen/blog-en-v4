@@ -77,6 +77,12 @@
 .dark-theme .projects-wrap .projects .slick-next:before {
   color: #feeb60;
 }
+.dark-theme .contact-me .contact-form {
+  background: #5d1502;
+}
+.dark-theme .contact-me .contact-form h3 {
+  color: white;
+}
 
 .light-theme {
   background-color: #fff;
@@ -148,6 +154,12 @@
 }
 .light-theme .projects-wrap .projects .slick-next:before {
   color: #b7463e;
+}
+.light-theme .contact-me .contact-form {
+  background: #ffbe51a8;
+}
+.light-theme .contact-me .contact-form h3 {
+  color: #bd5b1a;
 }
 
 .colorTheme {
@@ -594,7 +606,6 @@ footer .contact-me .contact-form {
   border-radius: 30px;
 }
 footer .contact-me .contact-form h3 {
-  color: #bd5b1a;
   display: block;
   font-size: 30px;
   font-weight: 400;

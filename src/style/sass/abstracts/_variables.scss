@@ -115,6 +115,16 @@ $light-yellow: #feeb60;
         }
     }
 
+    // Footer
+    .contact-me {
+        .contact-form {
+            background: #5d1502;
+            h3 {
+                color: white;
+              }
+        }
+    }
+
 }
 
 // Light theme
@@ -212,6 +222,16 @@ $light-yellow: #feeb60;
               .slick-next:before {
                 color: $maroon;
               }
+        }
+    }
+
+    // Footer
+    .contact-me {
+        .contact-form {
+            background: #ffbe51a8;
+            h3 {
+              color: #bd5b1a;
+            }
         }
     }
 
