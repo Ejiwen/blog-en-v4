@@ -21,7 +21,7 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        url: "http://fictional-university.ejiwen.info/graphql",
+        url: "https://ejiwen.info/graphql",
       },
     },
     "gatsby-plugin-sass",
