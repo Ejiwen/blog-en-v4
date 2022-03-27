@@ -86,7 +86,7 @@ function SvgHeaderBg() {
                 fill="#fc0"
                 fillOpacity="0.129"
             ></circle>
-            <g strokeWidth="0.007">
+            <g strokeWidth="0.007" className="bridge">
                 <path
                     fill="#b23a32"
                     stroke="#b23a32"
