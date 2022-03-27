@@ -16,10 +16,6 @@ const Title = styled.h1`
   color: #b7463e;
 `
 
-const Wrapper = styled.section`
-  background: papayawhip;
-`
-
 const ArticleWrapper = styled.div`
   max-width: 800px;
   padding: 20px;
@@ -38,7 +34,7 @@ const PostTemplate = ({ data: { previous, next, post } }) => {
   }
 
   return (
-    <Wrapper>
+    <div className={localStorage.getItem('theme')} >
       <Navbar />
       <div style={{
         background: 'url("../../images/blog-post-header.svg") top center no-repeat',
@@ -86,7 +82,7 @@ const PostTemplate = ({ data: { previous, next, post } }) => {
         </ul>
       </nav>
       <Footer />
-    </Wrapper>
+    </div>
   )
 }
 

@@ -9,6 +9,9 @@
 .dark-theme .svg-seperator {
   fill: #001738;
 }
+.dark-theme p {
+  color: white;
+}
 .dark-theme header #headerSvg .sky-background {
   fill: #034450;
 }

@@ -45,7 +45,7 @@ const BlogIndex = ({
   }
 
   return (
-    <Wrapper>
+    <div className={localStorage.getItem('theme')} >
       <Seo title="All posts" />
       <Navbar />
       <div style={{
@@ -78,7 +78,7 @@ const BlogIndex = ({
 
 
       <Footer />
-    </Wrapper>
+    </div>
   )
 }
 
