@@ -33,6 +33,18 @@
 .dark-theme header #headerSvg .njoums {
   display: block;
 }
+.dark-theme header #headerSvg .bridge-texture {
+  fill: #0f0403;
+  stroke: #0f0403;
+}
+.dark-theme header #headerSvg .bridge path.bridge-road {
+  fill: #8e8e84;
+  stroke: #8e8e84;
+}
+.dark-theme header #headerSvg .bridge-middle-bar {
+  fill: #0f0403;
+  stroke: #0f0403;
+}
 .dark-theme .my-bio {
   color: #1b3803;
 }
@@ -123,6 +135,18 @@
 .light-theme header #headerSvg .njoums {
   display: none;
 }
+.light-theme header #headerSvg .bridge-texture {
+  fill: #b23a32;
+  stroke: #b23a32;
+}
+.light-theme header #headerSvg .bridge path.bridge-road {
+  fill: #fb7d00;
+  stroke: #35282a;
+}
+.light-theme header #headerSvg .bridge-middle-bar {
+  fill: #b13a32;
+  stroke: #b13a32;
+}
 .light-theme .my-bio {
   color: #1b3803;
 }
@@ -133,8 +157,9 @@
   text-shadow: 2px 4px #1b3803, -2px 6px #b7463e;
 }
 .light-theme .my-bio--role {
-  background-color: #fef06973;
+  background-color: #b7463e4a;
   border-left: 2px solid #fef06973;
+  color: white;
 }
 .light-theme .my-bio--begin {
   border-bottom: 2px solid black;
