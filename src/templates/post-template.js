@@ -1,5 +1,5 @@
 // Single Post
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { Link, graphql } from "gatsby"
 import parse from "html-react-parser"
 import styled from "@emotion/styled"
@@ -22,9 +22,13 @@ const ArticleWrapper = styled.div`
 `
 
 const PostTemplate = ({ data: { previous, next, post } }) => {
+
+  const [themeName, setThemeName] = useState(undefined);
+
   useEffect(() => {
-    highlightCode()
-  })
+    highlightCode();
+    setThemeName(localStorage.getItem('theme'));
+  }, [])
 
   let disqusConfig = {
     url: post.uri,
@@ -33,7 +37,7 @@ const PostTemplate = ({ data: { previous, next, post } }) => {
   }
 
   return (
-    <div className={localStorage.getItem('theme')} >
+    <div className={themeName} >
       <Navbar />
       <div style={{
         background: 'url("../../images/blog-post-header.svg") top center no-repeat',
