@@ -13,6 +13,10 @@ const Header = ({ title, description }) => {
     localStorage.setItem("theme", theme);
   }
 
+  // useEffect(() => {
+  //   localStorage.setItem("theme", theme);
+  //   //setTheme(localStorage.getItem('theme'));
+  // }, [])
 
   return (
     <header style={{ position: "relative" }}>

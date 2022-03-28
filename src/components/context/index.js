@@ -8,12 +8,12 @@ import { createContext } from "react";
 //     localStorage.setItem("theme", 'light-theme');
 // }
 
-const windowGlobal = typeof window !== 'undefined' && window
+// const windowGlobal = typeof window !== 'undefined' && window
 
-if (!windowGlobal.localStorage.getItem('theme')) {
-    windowGlobal.localStorage.setItem("theme", 'light-theme');
-}
+// if (!windowGlobal.localStorage.getItem('theme')) {
+//     windowGlobal.localStorage.setItem("theme", 'light-theme');
+// }
 
-const ThemeContext = createContext(windowGlobal.localStorage.getItem('theme') || 'light-theme');
+const ThemeContext = createContext('');
 
 export default ThemeContext;
