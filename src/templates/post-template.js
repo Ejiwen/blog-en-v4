@@ -1,7 +1,6 @@
 // Single Post
 import React, { useEffect } from "react"
 import { Link, graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
 import parse from "html-react-parser"
 import styled from "@emotion/styled"
 import Navbar from "../components/Navbar"
