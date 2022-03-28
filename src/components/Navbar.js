@@ -1,6 +1,5 @@
 import { Link } from "gatsby"
 import React, { useEffect } from "react"
-import logo from "../../static/images/logoV2-top.svg"
 
 const Navbar = () => {
   useEffect(() => {

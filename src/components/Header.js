@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 import Navbar from "./Navbar"
 import SvgHeaderBg from "./SvgHeaderBg"
 import LogoSvg from "./svgComponent/LogoSvg"
-import logo from "../../static/images/logoV2-top.svg"
 import ThemeContext from "./context";
 
 const Header = ({ title, description }) => {
@@ -13,15 +12,6 @@ const Header = ({ title, description }) => {
     setTheme(prevTheme => (prevTheme == "dark-theme" ? "light-theme" : "dark-theme"));
     localStorage.setItem("theme", theme);
   }
-
-  // useEffect(() => {
-  //   console.log('hi');
-  //   // localStorage.setItem("theme", theme);
-  //   // setTheme(localStorage.getItem("theme"))
-  //   if (!localStorage.getItem('theme')) {
-  //     localStorage.setItem("theme", theme);
-  //   }
-  // }, [theme])
 
 
   return (
