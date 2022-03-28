@@ -45,7 +45,7 @@ const BlogIndex = ({
   }
 
   return (
-    <div>
+    <div className={localStorage.getItem('theme')} >
       <Seo title="All posts" />
       <Navbar />
       <div style={{

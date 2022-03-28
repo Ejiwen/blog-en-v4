@@ -33,7 +33,7 @@ const PostTemplate = ({ data: { previous, next, post } }) => {
   }
 
   return (
-    <div>
+    <div className={localStorage.getItem('theme')} >
       <Navbar />
       <div style={{
         background: 'url("../../images/blog-post-header.svg") top center no-repeat',

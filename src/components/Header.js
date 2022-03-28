@@ -8,17 +8,17 @@ import ThemeContext from "./context";
 
 const Header = ({ title, description }) => {
   const [theme, setTheme] = useContext(ThemeContext);
-  // function toggleTheme() {
-  //   setTheme(prevTheme => (prevTheme == "dark-theme" ? "light-theme" : "dark-theme"));
-  //   // localStorage.setItem("theme", theme);
-  // }
+  function toggleTheme() {
+    setTheme(prevTheme => (prevTheme == "dark-theme" ? "light-theme" : "dark-theme"));
+    localStorage.setItem("theme", theme);
+  }
 
 
   return (
     <header style={{ position: "relative" }}>
 
       <Link to="/">
-        <figure className="blogLogo">
+        <figure className="blogLogo" onClick={toggleTheme}>
           {/* <img src={logo} /> */}
           <LogoSvg />
           <figcaption>Dark Mode: {theme == "dark-theme" ? "On" : "Off"}</figcaption>

@@ -7,11 +7,11 @@ import ThemeContext from "../components/context";
 
 export default function Home({ data }) {
   // top of App function body
-  //const theme = useState(localStorage.getItem('theme') == 'light-theme' ? "dark-theme" : "light-theme");
+  const theme = useState(localStorage.getItem('theme') == 'light-theme' ? "dark-theme" : "light-theme");
+
 
   return (
-    // <ThemeContext.Provider value={theme}>
-    <ThemeContext.Provider value="dark-theme">
+    <ThemeContext.Provider value={theme}>
       <Layout>
         <Writing {...data} />
       </Layout>
