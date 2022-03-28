@@ -7,7 +7,8 @@ import ThemeContext from "../components/context";
 
 export default function Home({ data }) {
   // top of App function body
-  const theme = useState(localStorage.getItem('theme') == 'light-theme' ? "dark-theme" : "light-theme");
+  //const theme = useState(windowGlobal.localStorage.getItem('theme') == 'light-theme' ? "dark-theme" : "light-theme");
+  const theme = useState(theme == 'light-theme' ? "dark-theme" : "light-theme");
 
 
   return (
