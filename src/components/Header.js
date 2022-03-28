@@ -10,13 +10,11 @@ const Header = ({ title, description }) => {
   const [theme, setTheme] = useContext(ThemeContext);
   function toggleTheme() {
     setTheme(prevTheme => (prevTheme == "dark-theme" ? "light-theme" : "dark-theme"));
-    localStorage.setItem("theme", theme);
   }
 
-  // useEffect(() => {
-  //   localStorage.setItem("theme", theme);
-  //   //setTheme(localStorage.getItem('theme'));
-  // }, [])
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+  }, [theme])
 
   return (
     <header style={{ position: "relative" }}>

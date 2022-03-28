@@ -8,8 +8,15 @@ import ThemeContext from "../components/context";
 export default function Home({ data }) {
   // top of App function body
   //const theme = useState(windowGlobal.localStorage.getItem('theme') == 'light-theme' ? "dark-theme" : "light-theme");
-  const theme = useState(theme == 'light-theme' ? "dark-theme" : "light-theme");
+  // const theme = useState(theme == 'light-theme' ? "dark-theme" : "light-theme");
 
+  const [themeName, setThemeName] = useState();
+
+  useEffect(() => {
+    setThemeName(localStorage.getItem('theme'));
+  }, [themeName])
+
+  const theme = useState(themeName == 'light-theme' ? "dark-theme" : "light-theme");
 
   return (
     <ThemeContext.Provider value={theme}>

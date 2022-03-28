@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react'
+import React, { useContext } from 'react'
 import { Link, useStaticQuery, graphql } from "gatsby"
 import parse from "html-react-parser"
 import Header from "./Header"
@@ -9,6 +9,7 @@ import ThemeContext from "./context";
 
 const Layout = ({ isBlogPage, children }) => {
   let [theme, setTheme] = useContext(ThemeContext);
+  // let themy = localStorage.getItem('theme') || theme;
 
   // useEffect(() => {
   //   setTheme(localStorage.getItem('theme'));
