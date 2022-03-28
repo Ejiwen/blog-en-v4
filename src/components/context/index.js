@@ -10,6 +10,10 @@ import { createContext } from "react";
 
 const windowGlobal = typeof window !== 'undefined' && window
 
+if (!windowGlobal.localStorage.getItem('theme')) {
+    windowGlobal.localStorage.setItem("theme", 'light-theme');
+}
+
 const ThemeContext = createContext(windowGlobal.localStorage.getItem('theme') || 'light-theme');
 
 export default ThemeContext;
