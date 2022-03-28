@@ -1,6 +1,6 @@
 // The list of blog post 
 // blog page
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { Link, graphql } from "gatsby"
 import parse from "html-react-parser"
 import styled from "@emotion/styled"
@@ -31,6 +31,13 @@ const BlogIndex = ({
 }) => {
   const posts = data.allWpPost.nodes
 
+  const [themeName, setThemeName] = useState(undefined)
+
+  useEffect(() => {
+    setThemeName(localStorage.getItem('theme'));
+  }, [])
+
+
   if (!posts.length) {
     return (
       <Layout isHomePage>
@@ -45,7 +52,7 @@ const BlogIndex = ({
   }
 
   return (
-    <div className={localStorage.getItem('theme')} >
+    <div className={themeName} >
       <Seo title="All posts" />
       <Navbar />
       <div style={{
