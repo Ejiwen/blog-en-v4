@@ -25,6 +25,20 @@ $light-yellow: #feeb60;
     
     // header SVG
     header {
+
+        .blogLogo {
+            svg {
+                .sun {
+                    display: none;
+                }
+            }
+
+            
+                figcaption {
+                    color: white;
+                }
+            
+        }
         #headerSvg {
             .sky-background {
                 fill: #034450;
@@ -165,6 +179,20 @@ $light-yellow: #feeb60;
 
     // header SVG
     header {
+
+        .blogLogo {
+            svg {
+                .moon {
+                    display: none;
+                }
+            }
+            
+                figcaption {
+                    color: black;
+                }
+            
+        }
+
         #headerSvg {
             .sky-background {
                 fill: #ffbe51;

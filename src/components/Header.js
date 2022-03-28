@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 // import { StaticImage } from "gatsby-plugin-image"
 import Navbar from "./Navbar"
 import SvgHeaderBg from "./SvgHeaderBg"
+import LogoSvg from "./svgComponent/LogoSvg"
 import logo from "../../static/images/logoV2-top.svg"
 import ThemeContext from "./context";
 
@@ -27,8 +28,11 @@ const Header = ({ title, description }) => {
     <header style={{ position: "relative" }}>
 
       <Link to="/">
-        <img className="blogLogo" src={logo} />
-        <h3 onClick={toggleTheme}>Theme Switcher</h3>
+        <figure className="blogLogo" onClick={toggleTheme}>
+          {/* <img src={logo} /> */}
+          <LogoSvg />
+          <figcaption>Dark Mode: {theme == "dark-theme" ? "On" : "Off"}</figcaption>
+        </figure>
       </Link>
 
       <SvgHeaderBg />

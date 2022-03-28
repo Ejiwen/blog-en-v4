@@ -12,6 +12,12 @@
 .dark-theme p {
   color: white;
 }
+.dark-theme header .blogLogo svg .sun {
+  display: none;
+}
+.dark-theme header .blogLogo figcaption {
+  color: white;
+}
 .dark-theme header #headerSvg .sky-background {
   fill: #034450;
 }
@@ -116,6 +122,12 @@
 }
 .light-theme .svg-seperator {
   fill: #fff;
+}
+.light-theme header .blogLogo svg .moon {
+  display: none;
+}
+.light-theme header .blogLogo figcaption {
+  color: black;
 }
 .light-theme header #headerSvg .sky-background {
   fill: #ffbe51;
@@ -256,15 +268,20 @@ a {
   max-height: 200px;
 }
 */
-header img {
+header figure.blogLogo {
   position: absolute;
-  background-color: #b7463e;
-  width: 3.5rem;
-  height: 3.5rem;
+}
+header figure.blogLogo svg {
   z-index: 2500;
   border-radius: 50%;
   margin-top: 0.3rem;
-  margin-left: 0.5rem;
+  margin-left: 2rem;
+  margin-bottom: 0;
+}
+header figure.blogLogo figcaption {
+  margin-top: -12px;
+  font-size: 0.7em;
+  padding-left: 10px;
 }
 header .btm-header {
   position: relative;

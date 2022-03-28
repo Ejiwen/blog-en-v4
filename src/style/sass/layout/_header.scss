@@ -4,15 +4,21 @@ header {
   // background-size: cover;
   // position: relative;
 
-   img {
+  figure.blogLogo {
     position: absolute;
-    background-color: #b7463e;
-    width: 3.5rem;
-    height: 3.5rem;
+    
+    svg {
     z-index: 2500;
     border-radius: 50%;
     margin-top: 0.3rem;
-    margin-left: 0.5rem;
+    margin-left: 2rem;
+    margin-bottom: 0;
+    }
+    figcaption {
+      margin-top: -12px;
+      font-size: .7em;
+      padding-left: 10px;
+  }
   }
 
   .btm-header {
