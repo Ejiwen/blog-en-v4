@@ -10,7 +10,9 @@ import ThemeContext from "./context/index.js";
 const Layout = ({ isBlogPage, children }) => {
   const [theme, setTheme] = useContext(ThemeContext);
 
-  setTheme(localStorage.getItem('theme'));
+  const storedTheme =
+    typeof window !== 'undefined' && window.localStorage.getItem('theme');
+  setTheme(storedTheme);
 
   console.log("FROM LAYOUT COMPONENT ==> " + theme)
   // let [theme, setTheme] = useContext(storedTheme || ThemeContext);
