@@ -1,10 +1,10 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link, useStaticQuery, graphql } from "gatsby"
 import parse from "html-react-parser"
 import Header from "./Header"
 import Footer from "./Footer"
 import Projects from "./Projects"
-import ThemeContext from "./context/index.js";
+import ThemeContext from "./context";
 
 
 const Layout = ({ isBlogPage, children }) => {
@@ -12,7 +12,8 @@ const Layout = ({ isBlogPage, children }) => {
 
   const storedTheme =
     typeof window !== 'undefined' && window.localStorage.getItem('theme');
-  setTheme(storedTheme);
+
+  setTheme(storedTheme || "light-theme");
 
   console.log("FROM LAYOUT COMPONENT ==> " + theme)
   // let [theme, setTheme] = useContext(storedTheme || ThemeContext);
