@@ -4,16 +4,28 @@ import parse from "html-react-parser"
 import Header from "./Header"
 import Footer from "./Footer"
 import Projects from "./Projects"
-import ThemeContext from "./context";
+import ThemeContext from "./context/index.js";
 
 
 const Layout = ({ isBlogPage, children }) => {
-  let [theme, setTheme] = useContext(ThemeContext);
-  // let themy = localStorage.getItem('theme') || theme;
+  const [theme, setTheme] = useContext(ThemeContext);
+
+  setTheme(localStorage.getItem('theme'));
+
+  console.log("FROM LAYOUT COMPONENT ==> " + theme)
+  // let [theme, setTheme] = useContext(storedTheme || ThemeContext);
 
   // useEffect(() => {
-  //   setTheme(localStorage.getItem('theme'));
-  // }, [])
+  //   const storedTheme =
+  //     typeof window !== 'undefined' && window.localStorage.getItem('theme');
+  //   if (typeof window !== 'undefined') {
+  //     window.localStorage.setItem('theme', storedTheme || "light-theme");
+  //   }
+  // }, [theme]);
+
+  // useEffect(() => {
+  //   window.localStorage.setItem('theme', theme);
+  // }, [theme]);
 
   const {
     wp: {

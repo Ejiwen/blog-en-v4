@@ -8,13 +8,26 @@ import ThemeContext from "./context";
 
 const Header = ({ title, description }) => {
   const [theme, setTheme] = useContext(ThemeContext);
-  function toggleTheme() {
-    setTheme(prevTheme => (prevTheme == "dark-theme" ? "light-theme" : "dark-theme"));
+
+  // function toggleTheme() {
+  //   setTheme(prevTheme => (prevTheme == "dark-theme" ? "light-theme" : "dark-theme"));
+  // }
+
+  // useEffect(() => {
+  //   localStorage.setItem("theme", theme);
+  // }, [theme])
+
+  const toggleTheme = () => {
+    window.localStorage.setItem('theme', theme === 'light-theme' ? 'dark-theme' : 'light-theme');
+    setTheme((prevTheme) => {
+      return prevTheme === 'light-theme' ? 'dark-theme' : 'light-theme';
+    });
+
   }
 
-  useEffect(() => {
-    localStorage.setItem("theme", theme);
-  }, [theme])
+  // useEffect(() => {
+  //   window.localStorage.setItem('theme', theme);
+  // }, [theme]);
 
   return (
     <header style={{ position: "relative" }}>

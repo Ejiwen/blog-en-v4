@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import React from "react";
 
 // localStorage.setItem("theme", "light-theme");
 
@@ -13,7 +13,14 @@ import { createContext } from "react";
 // if (!windowGlobal.localStorage.getItem('theme')) {
 //     windowGlobal.localStorage.setItem("theme", 'light-theme');
 // }
+const storedTheme =
+    typeof window !== 'undefined' && window.localStorage.getItem('theme');
 
-const ThemeContext = createContext('');
+// if (!storedTheme) {
+//     window.localStorage.setItem('theme', "light-theme");
+// }
+console.log("----------->" + storedTheme)
+//const ThemeContext = createContext(storedTheme || "light-theme");
+const ThemeContext = React.createContext(storedTheme || "light-theme");
 
 export default ThemeContext;
