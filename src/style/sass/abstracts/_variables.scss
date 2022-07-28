@@ -9,7 +9,6 @@ $dark-blue: hsl(215, 100%, 11%);
 $light-yellow: #feeb60;
 
 .dark-theme {
-
     background-color: $dark-blue;
     h3 {
         color: $light-yellow ;
@@ -25,7 +24,7 @@ $light-yellow: #feeb60;
     
     // header SVG
     header {
-
+        
         .blogLogo {
             svg {
                 .sun {
@@ -41,6 +40,7 @@ $light-yellow: #feeb60;
         }
         #headerSvg {
             .sky-background {
+                transition: all 6s ease;
                 fill: #034450;
             }
               .mzoun {
@@ -169,6 +169,7 @@ $light-yellow: #feeb60;
 
 // Light theme
 .light-theme {
+    
     background-color: $white;
     h3 {
         color: $maroon;
@@ -195,6 +196,7 @@ $light-yellow: #feeb60;
 
         #headerSvg {
             .sky-background {
+                transition: all 6s ease;
                 fill: #ffbe51;
             }
             .sun-moon {
