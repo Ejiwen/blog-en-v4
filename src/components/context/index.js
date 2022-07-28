@@ -1,4 +1,4 @@
-import React from "react";
+import { createContext } from "react";
 
 // localStorage.setItem("theme", "light-theme");
 
@@ -21,6 +21,6 @@ const storedTheme =
 // }
 console.log("----------->" + storedTheme)
 //const ThemeContext = createContext(storedTheme || "light-theme");
-const ThemeContext = React.createContext(storedTheme || "light-theme");
+const ThemeContext = createContext(storedTheme || "light-theme");
 
 export default ThemeContext;
