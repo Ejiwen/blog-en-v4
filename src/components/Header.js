@@ -26,9 +26,12 @@ const Header = ({ title, description }) => {
   }
 
 
-  // useEffect(() => {
-  //   window.localStorage.setItem('theme', theme);
-  // }, [theme]);
+  useEffect(() => {
+    const storedTheme =
+      typeof window !== 'undefined' && window.localStorage.getItem('theme');
+
+    setTheme(storedTheme || "light-theme");
+  }, [theme]);
 
   return (
     <header style={{ position: "relative" }}>
