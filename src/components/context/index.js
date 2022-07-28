@@ -13,14 +13,14 @@ import { createContext } from "react";
 // if (!windowGlobal.localStorage.getItem('theme')) {
 //     windowGlobal.localStorage.setItem("theme", 'light-theme');
 // }
-const storedTheme =
-    typeof window !== 'undefined' && window.localStorage.getItem('theme');
+// const storedTheme =
+//     typeof window !== 'undefined' && window.localStorage.getItem('theme');
 
 // if (!storedTheme) {
 //     window.localStorage.setItem('theme', "light-theme");
 // }
-console.log("----------->" + storedTheme)
-//const ThemeContext = createContext(storedTheme || "light-theme");
-const ThemeContext = createContext(storedTheme || "light-theme");
+
+// const ThemeContext = createContext(storedTheme || "light-theme");
+const ThemeContext = createContext("");
 
 export default ThemeContext;
