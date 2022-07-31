@@ -727,6 +727,11 @@ footer .contact-me .contact-form button[type=submit] {
     width: 100px;
   }
 }
+@media (max-width: 780px) {
+  .writing__header svg {
+    width: 150px;
+  }
+}
 .writing__body {
   display: flex;
   flex-direction: row;
