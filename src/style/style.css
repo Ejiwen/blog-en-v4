@@ -1,13 +1,13 @@
 @charset "UTF-8";
 @import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
 .dark-theme {
-  background-color: hsl(215deg, 100%, 11%);
+  background-color: #23272f;
 }
 .dark-theme h3 {
   color: #feeb60;
 }
 .dark-theme .svg-seperator {
-  fill: hsl(215deg, 100%, 11%);
+  fill: #23272f;
 }
 .dark-theme p {
   color: white;
